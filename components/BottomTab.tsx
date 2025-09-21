@@ -32,7 +32,7 @@ export function BottomTab() {
           const active = path === i.href || (i.href !== '/' && path.startsWith(i.href));
           return (
             <li key={i.href} style={{textAlign:'center'}}>
-              <Link href={i.href} className="tab-link" style={{display:'inline-flex',flexDirection:'column',gap:4,alignItems:'center',padding:'8px 6px',borderRadius:12,background: active ? 'var(--color-bg)' : 'transparent', color: active ? 'var(--color-contrast)' : 'inherit'}}>
+              <Link href={i.href as any} className="tab-link" style={{display:'inline-flex',flexDirection:'column',gap:4,alignItems:'center',padding:'8px 6px',borderRadius:12,background: active ? 'var(--color-bg)' : 'transparent', color: active ? 'var(--color-contrast)' : 'inherit'}}>
                 <span aria-hidden style={{fontSize:18,lineHeight:1}}>{i.icon}</span>
                 <span style={{fontSize:12}}>{i.label}</span>
               </Link>

@@ -26,7 +26,7 @@ export function Header() {
   return (
     <header className="pp-header" style={{position:'sticky',top:0,zIndex:10}}>
       <div className="container pp-header-inner">
-        <Link href={homeHref} aria-label={isEnglish ? 'Home' : 'Beranda'} className="pp-brand">
+        <Link href={homeHref as any} aria-label={isEnglish ? 'Home' : 'Beranda'} className="pp-brand">
           <Image 
             src="/images/logo/logo-batangshipyard-transparent.png" 
             alt="Batang Shipyard Logo" 
@@ -40,7 +40,7 @@ export function Header() {
 
         <nav aria-label="Primary" className="pp-nav">
           {navItems.map(item => (
-            <Link key={item.href} href={item.href}>{item.label}</Link>
+            <Link key={item.href} href={item.href as any}>{item.label}</Link>
           ))}
         </nav>
 
@@ -71,15 +71,15 @@ export function Header() {
               else target = '/en';
             }
             return (
-              <Link href={target} className="pp-btn outline" aria-label={isEnglish ? 'Switch to Indonesian' : 'Beralih ke Bahasa Inggris'}>
+              <Link href={target as any} className="pp-btn outline" aria-label={isEnglish ? 'Switch to Indonesian' : 'Beralih ke Bahasa Inggris'}>
                 {isEnglish ? 'ID' : 'EN'}
               </Link>
             );
           })()}
           {!isEnglish && (
-            <Link href="/blog" className="pp-btn outline">Blog</Link>
+            <Link href={"/blog" as any} className="pp-btn outline">Blog</Link>
           )}
-          <Link href={isEnglish ? '/en/contact' : '/kontak'} className="pp-btn primary">
+          <Link href={(isEnglish ? '/en/contact' : '/kontak') as any} className="pp-btn primary">
             {isEnglish ? 'Contact Us' : 'Hubungi Kami'}
           </Link>
         </div>

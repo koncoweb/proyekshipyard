@@ -1,0 +1,126 @@
+:root {
+  --color-accent: #669bbc;
+  --color-border: #003049;
+  --color-bg: #fdf0d5;
+  --color-contrast: #780000;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --radius: 12px;
+  --shadow: 0 8px 24px rgba(0,0,0,.06);
+  /* PayPal-like header tokens */
+  --pp-header-height: 64px;
+  --pp-header-bg: #ffffff;
+  --pp-header-border: rgba(0,0,0,.06);
+  --pp-link: #001c64;
+  --pp-link-hover: #003087;
+  --pp-btn-primary: #0070e0;
+  --pp-btn-primary-hover: #0059b3;
+  --pp-btn-outline: #ffffff;
+  --pp-btn-outline-border: #003087;
+  --pp-btn-outline-text: #003087;
+  --card-border: 1px solid rgba(0,0,0,.08);
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; padding: 0; height: 100%; }
+body { 
+  background: #f5f7fb; 
+  color: var(--color-text); 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'kern' 1;
+}
+a { 
+  color: var(--color-text); 
+  text-decoration: none; 
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+a:hover { 
+  color: var(--pp-link); 
+  text-decoration: underline;
+}
+a:focus-visible, button:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
+.app-shell { min-height: 100dvh; display: grid; grid-template-rows: auto 1fr auto; }
+.screen { padding: 0 0 40px; }
+
+/* Page spacing (PayPal-like comfortable gutters) */
+.screen > section { padding: 28px 0; }
+
+/* Add horizontal gutters to all direct children unless they are already a .container */
+.screen > :not(.container) { padding-left: 24px; padding-right: 24px; }
+
+/* Containers manage their own internal gutters */
+.screen > .container, .container section { padding-left: 0; padding-right: 0; }
+section > .container, .container { padding-left: 24px; padding-right: 24px; }
+
+@media (min-width: 900px) {
+  .screen > :not(.container) { padding-left: 32px; padding-right: 32px; }
+  section > .container, .container { padding-left: 32px; padding-right: 32px; }
+}
+
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* Header (PayPal-like) */
+.pp-header { height: var(--pp-header-height); background: var(--pp-header-bg); border-bottom: 1px solid var(--pp-header-border); }
+.pp-header-inner { height: 100%; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 16px; }
+.pp-brand { display: inline-flex; align-items: center; gap: 10px; color: var(--pp-link); font-weight: 800; font-size: 18px; }
+.pp-nav { display: none; align-items: center; justify-content: center; gap: 22px; }
+.pp-nav a { color: var(--color-text); font-weight: 500; letter-spacing: .01em; font-size: 13px; display: inline-flex; align-items: center; gap: 6px; }
+.pp-nav a:hover { color: var(--pp-link-hover); }
+.pp-actions { display: flex; align-items: center; gap: 10px; }
+.pp-btn { display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; padding: 10px 18px; font-weight: 700; border: 2px solid transparent; font-size: 13px; }
+.pp-btn.primary { background: var(--pp-btn-primary); color: #fff; }
+.pp-btn.primary:hover { background: var(--pp-btn-primary-hover); }
+.pp-btn.outline { background: var(--pp-btn-outline); color: var(--pp-btn-outline-text); border-color: var(--pp-btn-outline-border); }
+.pp-chevron { font-size: 12px; transform: translateY(-1px); }
+
+@media (min-width: 900px) {
+  .pp-nav { display: inline-flex; }
+}
+
+.card { background: #fff; border: var(--card-border); border-radius: var(--radius); padding: 16px; box-shadow: var(--shadow); }
+.card.media { display: grid; grid-template-columns: 96px 1fr; gap: 14px; align-items: center; }
+.media-img { width: 96px; height: 72px; background: linear-gradient(180deg,#eef2fb,#e6ebf9); border-radius: 10px; border: 1px solid rgba(0,0,0,.06); box-shadow: 0 2px 10px rgba(0,0,0,.04) inset; }
+.btn { display: inline-flex; align-items: center; justify-content: center; border-radius: 28px; padding: 12px 18px; border: 2px solid var(--color-border); background: var(--color-contrast); color: #fff; font-weight: 700; font-size: 13px; }
+.btn.secondary { background: var(--color-accent); border-color: var(--color-accent); }
+.btn.outline { background: transparent; color: var(--color-contrast); border-color: var(--color-contrast); }
+
+.list { display: grid; gap: 12px; }
+.section { margin: 12px 0 20px; }
+h1 { font-size: 20px; margin: 0 0 8px; letter-spacing: -.01em; color: var(--color-text); font-weight: 700; }
+h2 { font-size: 16px; margin: 16px 0 8px; color: var(--color-text); font-weight: 700; }
+h3 { font-size: 14px; margin: 12px 0 6px; color: var(--color-text); font-weight: 700; }
+p { margin: 8px 0; line-height: 1.5; font-size: 13px; color: var(--color-text-light); font-weight: 500; }
+strong { color: var(--color-text); font-weight: 600; }
+
+.nav-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+@media (min-width: 560px) { .nav-grid { grid-template-columns: 1fr 1fr 1fr; } }
+
+/* PayPal-like hero */
+.hero { 
+  background: linear-gradient(0deg, rgba(255,255,255,.92) 0%, rgba(255,255,255,.72) 100%), url('/images/bg/bghome.webp') center / cover no-repeat; 
+  border-bottom: 1px solid rgba(0,0,0,.06); 
+}
+.shipyard-hero { 
+  background: linear-gradient(0deg, rgba(255,255,255,.92) 0%, rgba(255,255,255,.72) 100%), url('/images/bg/bgshipyardindonesia.webp') center / cover no-repeat; 
+}
+.services-hero {
+  background: linear-gradient(0deg, rgba(255,255,255,.92) 0%, rgba(255,255,255,.72) 100%), url('/images/bg/bglayanan.webp') center / cover no-repeat;
+}
+.order-hero {
+  background: linear-gradient(0deg, rgba(255,255,255,.92) 0%, rgba(255,255,255,.72) 100%), url('/images/bg/bgprosespemesanan.webp') center / cover no-repeat;
+}
+.about-hero {
+  background: linear-gradient(0deg, rgba(255,255,255,.92) 0%, rgba(255,255,255,.72) 100%), url('/images/bg/bgtentangkami.webp') center / cover no-repeat;
+}
+.hero-inner { padding: 48px 0; }
+.hero-title { font-size: clamp(24px, 4vw, 36px); line-height: 1.1; margin: 0 0 12px; color: #0b2a6f; font-weight: 700; }
+.hero-sub { font-size: clamp(14px, 2vw, 16px); color: var(--color-text-light); margin: 0 0 20px; }
+.hero-cta { display: flex; gap: 12px; align-items: center; }
+
+

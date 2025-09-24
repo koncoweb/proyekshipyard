@@ -5,7 +5,7 @@ export const revalidate = 86400;
 export async function generateMetadata(): Promise<Metadata> {
   const canonical = 'https://batangshipyard.com/proyek';
   const title = 'Portofolio Proyek | Batang Shipyard Indonesia - Produksi Kapal Kayu & Perawatan';
-  const description = 'Lihat portofolio proyek Batang Shipyard Indonesia: produksi kapal kayu, perawatan kapal, pengurusan dokumen, dan jual-beli kapal bekas yang telah berhasil diselesaikan.';
+  const description = 'Lihat portofolio proyek Batang Shipyard Indonesia: produksi kapal kayu, perawatan kapal, pengurusan dokumen, dan jual-beli kapal second yang telah berhasil diselesaikan.';
   return {
     title,
     description,
@@ -103,7 +103,7 @@ export default function Page() {
       </div>
 
       <div className="card">
-        <h2>Proyek Jual-Beli Kapal Bekas</h2>
+        <h2>Proyek Jual-Beli Kapal Second</h2>
         <div style={{display: 'grid', gap: '1.5rem', marginTop: '1rem'}}>
           <div>
             <h3>Penjualan Kapal Kayu - 120 GT</h3>
@@ -115,7 +115,7 @@ export default function Page() {
           </div>
           
           <div>
-            <h3>Pembelian Kapal Bekas - 200 GT</h3>
+            <h3>Pembelian Kapal Second - 200 GT</h3>
             <p><strong>Pembeli:</strong> CV. Laut Sejahtera</p>
             <p><strong>Penjual:</strong> PT. Bahari Mandiri</p>
             <p><strong>Layanan:</strong> Inspeksi teknis, negosiasi harga, pengurusan transfer dokumen</p>
@@ -142,7 +142,8 @@ export default function Page() {
           </div>
           <div style={{textAlign: 'center', padding: '1rem', border: '1px solid var(--color-border)', borderRadius: '8px'}}>
             <h3 style={{fontSize: '2rem', margin: '0', color: 'var(--color-primary)'}}>15+</h3>
-            <p>Transaksi Kapal Bekas</p>
+            <p>Transaksi Kapal Second</p>
+            <p>Transaksi Kapal Second</p>
           </div>
         </div>
       </div>

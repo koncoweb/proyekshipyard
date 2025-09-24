@@ -8,7 +8,7 @@ export default function Page() {
         <div className="container hero-inner">
           <p style={{color:'#0b2a6f',fontWeight:700,margin:'0 0 8px'}}>Layanan Batang Shipyard Indonesia</p>
           <h1 className="hero-title">Solusi Lengkap untuk Kebutuhan Kapal Anda</h1>
-          <p className="hero-sub">Dari produksi kapal kayu, pengurusan dokumen kapal & SPB, perawatan berkala, hingga fasilitasi jual-beli kapal bekas. Semua layanan kami dirancang untuk mempercepat operasional maritim Anda dengan standar kualitas tinggi dan proses yang transparan.</p>
+          <p className="hero-sub">Dari produksi kapal kayu, pengurusan dokumen kapal & SPB, perawatan berkala, hingga fasilitasi jual-beli kapal second. Semua layanan kami dirancang untuk mempercepat operasional maritim Anda dengan standar kualitas tinggi dan proses yang transparan.</p>
           <div className="hero-cta">
             <Link href="/kontak" className="btn">Konsultasi Layanan</Link>
             <Link href="/proyek" className="btn outline">Lihat Portofolio</Link>
@@ -24,7 +24,7 @@ export default function Page() {
             <Link className="card" href="/layanan/produksi-kapal-kayu">Produksi Kapal Kayu</Link>
             <Link className="card" href="/layanan/dokumen-kapal">Dokumen Kapal & SPB</Link>
             <Link className="card" href="/layanan/perawatan-kapal">Perawatan Kapal</Link>
-            <Link className="card" href="/layanan/kapal-bekas">Kapal Bekas</Link>
+            <Link className="card" href="/layanan/kapal-bekas">Kapal Second</Link>
           </div>
         </div>
 
@@ -43,7 +43,7 @@ export default function Page() {
           <div style={{display:'grid',gap:'10px',marginTop:8}}>
             <div>
               <h3>Berapa lama waktu pengerjaan tiap layanan?</h3>
-              <p>Produksi kapal: 6–12 bulan tergantung ukuran dan kompleksitas. Dokumen: 2–8 minggu. Perawatan: 1–8 minggu sesuai cakupan. Transaksi kapal bekas: 2–12 minggu.</p>
+              <p>Produksi kapal: 6–12 bulan tergantung ukuran dan kompleksitas. Dokumen: 2–8 minggu. Perawatan: 1–8 minggu sesuai cakupan. Transaksi kapal second: 2–12 minggu.</p>
             </div>
             <div>
               <h3>Apakah konsultasi awal berbayar?</h3>

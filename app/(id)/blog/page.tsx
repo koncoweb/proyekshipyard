@@ -91,7 +91,7 @@ export default function Page() {
             <ul>
               <li>Regulasi Maritim</li>
               <li>Teknologi Terbaru</li>
-              <li>Pasar Kapal Bekas</li>
+              <li>Pasar Kapal Second</li>
               <li>Peluang Bisnis</li>
             </ul>
           </div>

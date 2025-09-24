@@ -48,7 +48,7 @@ export default function Page() {
         <div className="container hero-inner">
           <p style={{color:'#0b2a6f',fontWeight:700,margin:'0 0 8px'}}>Batang Shipyard</p>
           <h1 className="hero-title">Produksi, Dokumen, dan Perawatan Kapal.</h1>
-          <p className="hero-sub">Solusi lengkap pembuatan kapal kayu, pengurusan dokumen kapal, perawatan, hingga jual-beli kapal bekas.</p>
+          <p className="hero-sub">Solusi lengkap pembangunan kapal, pengurusan dokumen kapal, perawatan kapal, dan jual-beli kapal second.</p>
           <div className="hero-cta">
             <Link href="/layanan" className="btn">Lihat Layanan</Link>
             <Link href="/kontak" className="btn outline">Hubungi Kami</Link>
@@ -137,7 +137,7 @@ export default function Page() {
               <div className="media-img" style={{position:'relative',overflow:'hidden'}}>
                 <Image 
                   src="/images/icon/icons8-sell-48.png" 
-                  alt="Jual-beli Kapal Bekas" 
+                  alt="Jual-beli Kapal Second" 
                   fill 
                   style={{objectFit:'cover'}}
                 />
@@ -145,7 +145,7 @@ export default function Page() {
               <div>
                 <div style={{display:'flex',alignItems:'center',gap:8}}>
                   <ServiceIcon type="secondhand" />
-                  <strong>Jual-beli Kapal Bekas</strong>
+                  <strong>Jual-beli Kapal Second</strong>
                 </div>
                 <p style={{marginTop:6}}>Mempertemukan penjual-pembeli, negosiasi, dan penyusunan sale form.</p>
               </div>

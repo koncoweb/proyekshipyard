@@ -5,7 +5,7 @@ export const revalidate = 86400;
 export async function generateMetadata(): Promise<Metadata> {
   const canonical = 'https://batangshipyard.com/proses-pemesanan';
   const title = 'Proses Pemesanan | Batang Shipyard Indonesia';
-  const description = 'Prosedur pemesanan kapal: konsultasi spesifikasi (termasuk GT), desain oleh tim teknis, presentasi desain & RAB, negosiasi harga, dan penandatanganan SPK via notaris (RAB, gambar, termin 3 tahap).';
+  const description = 'Prosedur pemesanan kapal: konsultasi spesifikasi (termasuk GT), desain oleh tim teknis, presentasi desain & RAB, negosiasi harga, dan penandatanganan SPK via notaris (RAB, gambar, termin 4 tahap).';
   return {
     title,
     description,
@@ -48,17 +48,18 @@ export default function Page() {
             </li>
             <li>
               <strong>Penandatanganan SPK via Notaris</strong>
-              <p>SPK (Surat Perintah Kerja) ditandatangani di hadapan Notaris. Dokumen SPK mencakup Gambar Desain final, RAB yang disetujui, serta Termin Pembayaran 3 tahap.</p>
+              <p>SPK (Surat Perintah Kerja) ditandatangani di hadapan Notaris. Dokumen SPK mencakup Gambar Desain final, RAB yang disetujui, serta Termin Pembayaran 4 tahap.</p>
             </li>
           </ol>
         </div>
 
         <div className="card">
-          <h2>Termin Pembayaran (3 Tahap)</h2>
+          <h2>Termin Pembayaran (4 Tahap)</h2>
           <ul>
-            <li><strong>Tahap 1:</strong> Down Payment untuk pengadaan material utama dan kick-off proyek.</li>
-            <li><strong>Tahap 2:</strong> Progress payment saat konstruksi mencapai sekitar 70%.</li>
-            <li><strong>Tahap 3:</strong> Final payment ketika kapal selesai dan siap diserahkan.</li>
+            <li><strong>Tahap 1:</strong> Down Payment sebesar 30% untuk pengadaan material utama dan proyek pembangunan dimulai.</li>
+            <li><strong>Tahap 2:</strong> Pembayaran kedua sebesar 40% saat progres mencapai 30%.</li>
+            <li><strong>Tahap 3:</strong> Pembayaran ketiga sebesar 25% saat progres mencapai 70%.</li>
+            <li><strong>Tahap 4:</strong> Final Payment sebesar 5% saat kapal selesai 100% dan dilakukan serah terima kapal.</li>
           </ul>
         </div>
 

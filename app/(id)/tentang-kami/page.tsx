@@ -5,7 +5,7 @@ export const revalidate = 86400;
 export async function generateMetadata(): Promise<Metadata> {
   const canonical = 'https://batangshipyard.com/tentang-kami';
   const title = 'Tentang Kami | Batang Shipyard Indonesia - Galangan Kapal Terpercaya';
-  const description = 'Batang Shipyard Indonesia adalah galangan kapal terpercaya yang mengkhususkan diri dalam produksi kapal kayu, pengurusan dokumen kapal, perawatan kapal, dan jual-beli kapal bekas.';
+  const description = 'Batang Shipyard Indonesia adalah galangan kapal terpercaya yang mengkhususkan diri dalam produksi kapal kayu, pengurusan dokumen kapal, perawatan kapal, dan jual-beli kapal second.';
   return {
     title,
     description,
@@ -22,7 +22,7 @@ export default function Page() {
         <div className="container hero-inner">
           <p style={{color:'#0b2a6f',fontWeight:700,margin:'0 0 8px'}}>Batang Shipyard Indonesia</p>
           <h1 className="hero-title">Tentang Batang Shipyard Indonesia</h1>
-          <p className="hero-sub">Galangan kapal terpercaya yang menyediakan solusi lengkap: produksi kapal kayu, dokumen & SPB, perawatan kapal, hingga jual-beli kapal bekas.</p>
+          <p className="hero-sub">Galangan kapal terpercaya yang menyediakan solusi lengkap: produksi kapal kayu, dokumen & SPB, perawatan kapal, hingga jual-beli kapal second.</p>
         </div>
       </section>
 
@@ -32,7 +32,7 @@ export default function Page() {
         <div className="card">
           <h2>Visi & Misi</h2>
           <p><strong>Visi:</strong> Menjadi galangan kapal terdepan di Indonesia yang menyediakan solusi lengkap untuk industri maritim dengan standar internasional.</p>
-          <p><strong>Misi:</strong> Memberikan layanan terbaik dalam produksi kapal kayu, pengurusan dokumen kapal, perawatan kapal, dan fasilitasi jual-beli kapal bekas dengan kualitas tinggi dan pelayanan yang profesional.</p>
+          <p><strong>Misi:</strong> Memberikan layanan terbaik dalam produksi kapal kayu, pengurusan dokumen kapal, perawatan kapal, dan fasilitasi jual-beli kapal second dengan kualitas tinggi dan pelayanan yang profesional.</p>
         </div>
 
         <div className="card">
@@ -68,8 +68,8 @@ export default function Page() {
               <p>Inspeksi rutin, pembersihan, perbaikan lambung, perawatan mesin, cat, dan penggantian sparepart.</p>
             </div>
             <div>
-              <h3>Kapal Bekas</h3>
-              <p>Fasilitasi jual-beli kapal bekas dengan negosiasi harga, penyusunan kontrak, dan due diligence.</p>
+            <h3>Kapal Second</h3>
+            <p>Fasilitasi jual-beli kapal second dengan negosiasi harga, penyusunan kontrak, dan due diligence.</p>
             </div>
           </div>
         </div>

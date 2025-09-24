@@ -5,7 +5,7 @@ export const revalidate = 86400;
 export async function generateMetadata(): Promise<Metadata> {
   const canonical = 'https://batangshipyard.com/kontak';
   const title = 'Kontak | Batang Shipyard Indonesia - Konsultasi Kapal & Galangan';
-  const description = 'Hubungi Batang Shipyard Indonesia untuk konsultasi produksi kapal kayu, pengurusan dokumen kapal, perawatan kapal, dan jual-beli kapal bekas. Tim kami siap membantu proyek Anda.';
+  const description = 'Hubungi Batang Shipyard Indonesia untuk konsultasi produksi kapal kayu, pengurusan dokumen kapal, perawatan kapal, dan jual-beli kapal second. Tim kami siap membantu proyek Anda.';
   return {
     title,
     description,
@@ -62,7 +62,7 @@ export default function Page() {
               <option value="produksi-kapal">Produksi Kapal Kayu</option>
               <option value="dokumen-kapal">Dokumen Kapal & SPB</option>
               <option value="perawatan-kapal">Perawatan Kapal</option>
-              <option value="kapal-bekas">Jual-Beli Kapal Bekas</option>
+              <option value="kapal-bekas">Jual-Beli Kapal Second</option>
               <option value="konsultasi">Konsultasi Umum</option>
             </select>
           </label>
@@ -86,9 +86,7 @@ export default function Page() {
             <h3>Alamat Galangan</h3>
             <p>
               <strong>Batang Shipyard Indonesia</strong><br/>
-              Jl. Pantai Utara No. 123<br/>
-              Batang, Jawa Tengah 51211<br/>
-              Indonesia
+              jalan gajah mada 165 Batang , Jawa tengah, 51121
             </p>
           </div>
           
@@ -135,8 +133,8 @@ export default function Page() {
           </div>
           
           <div>
-            <h3>Konsultasi Kapal Bekas</h3>
-            <p>Fasilitasi jual-beli kapal bekas dengan inspeksi teknis dan negosiasi harga yang transparan.</p>
+            <h3>Konsultasi Kapal Second</h3>
+            <p>Fasilitasi jual-beli kapal second dengan inspeksi teknis dan negosiasi harga yang transparan.</p>
             <p><strong>Kontak:</strong> <a href="https://wa.me/6282221665371">+6282221665371</a></p>
           </div>
         </div>

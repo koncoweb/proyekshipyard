@@ -7,7 +7,7 @@ import { Footer } from '@/components/Footer';
 export const metadata: Metadata = {
   metadataBase: new URL('https://batangshipyard.com'),
   title: { default: 'Batang Shipyard Indonesia', template: '%s | Batang Shipyard Indonesia' },
-  description: 'Produksi kapal kayu, dokumen kapal, perawatan kapal, dan jual-beli kapal bekas.',
+  description: 'Produksi kapal kayu, dokumen kapal, perawatan kapal, dan jual-beli kapal second.',
   alternates: { canonical: '/' },
   openGraph: { siteName: 'Batang Shipyard Indonesia', type: 'website', locale: 'id_ID' },
   twitter: { card: 'summary_large_image' }

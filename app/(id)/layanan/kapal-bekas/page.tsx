@@ -4,8 +4,8 @@ export const revalidate = 86400;
 
 export async function generateMetadata(): Promise<Metadata> {
   const canonical = 'https://batangshipyard.com/layanan/kapal-bekas';
-  const title = 'Jual-Beli Kapal Bekas | Batang Shipyard Indonesia - Broker & Konsultan';
-  const description = 'Layanan jual-beli kapal bekas profesional: listing kapal, inspeksi teknis, negosiasi harga, penyusunan kontrak, dan due diligence untuk transaksi kapal yang aman.';
+  const title = 'Jual-Beli Kapal Second | Batang Shipyard Indonesia - Broker & Konsultan';
+  const description = 'Layanan jual-beli kapal second profesional: listing kapal, inspeksi teknis, negosiasi harga, penyusunan kontrak, dan due diligence untuk transaksi kapal yang aman.';
   return {
     title,
     description,
@@ -18,11 +18,11 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Page() {
   return (
     <section className="list">
-      <h1>Layanan Jual-Beli Kapal Bekas Profesional</h1>
+      <h1>Layanan Jual-Beli Kapal Second Profesional</h1>
       
       <div className="card">
-        <h2>Broker Kapal Bekas Terpercaya</h2>
-        <p>Batang Shipyard Indonesia menyediakan layanan jual-beli kapal bekas yang profesional dan terpercaya. Sebagai broker kapal berpengalaman, kami membantu mempertemukan penjual dan pembeli dengan proses transaksi yang aman dan transparan.</p>
+        <h2>Broker Kapal Second Terpercaya</h2>
+        <p>Batang Shipyard Indonesia menyediakan layanan jual-beli kapal second yang profesional dan terpercaya. Sebagai broker kapal berpengalaman, kami membantu mempertemukan penjual dan pembeli dengan proses transaksi yang aman dan transparan.</p>
         <p>Tim kami memiliki keahlian dalam menilai kondisi kapal, melakukan inspeksi teknis, dan memfasilitasi negosiasi yang menguntungkan kedua belah pihak. Kami memastikan setiap transaksi berjalan lancar dengan dokumen yang lengkap dan legal.</p>
       </div>
 
@@ -32,7 +32,7 @@ export default function Page() {
           <div>
             <h3>Listing & Pencarian Kapal</h3>
             <ul>
-              <li><strong>Database Kapal Bekas:</strong> Akses ke database kapal bekas yang tersedia</li>
+              <li><strong>Database Kapal Second:</strong> Akses ke database kapal second yang tersedia</li>
               <li><strong>Pencarian Sesuai Kebutuhan:</strong> Pencarian kapal berdasarkan spesifikasi yang diinginkan</li>
               <li><strong>Listing Gratis:</strong> Layanan listing kapal untuk penjual tanpa biaya</li>
               <li><strong>Update Berkala:</strong> Update informasi kapal secara berkala</li>
@@ -176,7 +176,7 @@ export default function Page() {
       <div className="card">
         <h2>Keunggulan Layanan Kami</h2>
         <ul>
-          <li><strong>Tim Berpengalaman:</strong> Tim yang berpengalaman dalam transaksi kapal bekas</li>
+          <li><strong>Tim Berpengalaman:</strong> Tim yang berpengalaman dalam transaksi kapal second</li>
           <li><strong>Inspeksi Teknis:</strong> Inspeksi teknis yang menyeluruh dan akurat</li>
           <li><strong>Penilaian Fair:</strong> Penilaian nilai kapal yang fair dan objektif</li>
           <li><strong>Dokumen Lengkap:</strong> Memastikan kelengkapan dokumen transaksi</li>
@@ -236,10 +236,10 @@ export default function Page() {
       </div>
 
       <div className="card">
-        <h2>Mulai Transaksi Kapal Bekas Anda</h2>
-        <p>Apakah Anda ingin menjual atau membeli kapal bekas? Tim kami siap membantu mewujudkan transaksi yang aman dan menguntungkan. Konsultasi awal kami gratis dan tanpa komitmen.</p>
+        <h2>Mulai Transaksi Kapal Second Anda</h2>
+        <p>Apakah Anda ingin menjual atau membeli kapal second? Tim kami siap membantu mewujudkan transaksi yang aman dan menguntungkan. Konsultasi awal kami gratis dan tanpa komitmen.</p>
         <div style={{display: 'flex', gap: '1rem', marginTop: '1rem'}}>
-          <a className="btn" href="https://wa.me/6282221665371?text=Halo,%20saya%20ingin%20listing%20kapal%20atau%20mencari%20kapal%20bekas" style={{
+          <a className="btn" href="https://wa.me/6282221665371?text=Halo,%20saya%20ingin%20listing%20kapal%20atau%20mencari%20kapal%20second" style={{
             background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
             color: 'white',
             border: 'none',

@@ -8,7 +8,7 @@ export default function EnHomePage() {
         
         <div className="prose max-w-none">
           <p className="text-xl text-gray-600 mb-8">
-            Your trusted partner for shipbuilding, repair, and maintenance services in Indonesia.
+            Comprehensive solutions for ship construction, ship documentation, vessel maintenance, and second-hand ship trading.
           </p>
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">

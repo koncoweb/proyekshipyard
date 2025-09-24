@@ -16,7 +16,7 @@ export default function ContactPage() {
             <div className="space-y-4">
               <div>
                 <h3 className="font-semibold">Address</h3>
-                <p className="text-gray-600">Batang Shipyard, Indonesia</p>
+                <p className="text-gray-600">jalan gajah mada 165 Batang , Jawa tengah, 51121</p>
               </div>
               
               <div>

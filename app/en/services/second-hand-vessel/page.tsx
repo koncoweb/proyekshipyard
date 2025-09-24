@@ -1,19 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: 'Second Hand Vessel Services | Batang Shipyard',
-  description: 'Professional second hand vessel services at Batang Shipyard Indonesia',
+  title: 'Second-Hand Vessel Services | Batang Shipyard',
+  description: 'Professional second-hand vessel services at Batang Shipyard Indonesia',
 };
 
 export default function SecondHandVesselPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">Second Hand Vessel Services</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-8">Second-Hand Vessel Services</h1>
         
         <div className="prose max-w-none">
           <p className="text-lg text-gray-600 mb-6">
-            We provide comprehensive second hand vessel services including inspection, 
+            We provide comprehensive second-hand vessel services including inspection, 
             evaluation, and acquisition support for quality pre-owned vessels.
           </p>
           
@@ -75,7 +75,7 @@ export default function SecondHandVesselPage() {
             <h3 className="text-xl font-semibold mb-3">Contact Us for More Information</h3>
             <p className="text-gray-600 mb-4">
               Ready to find your next vessel? Contact our team for a consultation 
-              and let us help you find the perfect second hand vessel for your needs.
+              and let us help you find the perfect second-hand vessel for your needs.
             </p>
             <button className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">
               Get Quote

@@ -95,8 +95,8 @@ export default function Page() {
           <div>
             <h3>Kontak Langsung</h3>
             <p>
-              <strong>Telepon:</strong> <a href="tel:+622854123456">+62 285 4123 456</a><br/>
-              <strong>WhatsApp:</strong> <a href="https://wa.me/6285640012454">+62 856 4001 2454</a><br/>
+              <strong>Telepon:</strong> <a href="tel:+6282221665371">+6282221665371</a><br/>
+              <strong>WhatsApp:</strong> <a href="https://wa.me/6282221665371">+6282221665371</a><br/>
               <strong>Email:</strong> <a href="mailto:info@batangshipyard.com">info@batangshipyard.com</a>
             </p>
           </div>
@@ -119,13 +119,13 @@ export default function Page() {
           <div>
             <h3>Konsultasi Produksi Kapal</h3>
             <p>Konsultasi gratis untuk spesifikasi kapal, desain, dan estimasi biaya produksi kapal kayu sesuai kebutuhan Anda.</p>
-            <p><strong>Kontak:</strong> <a href="tel:+622854123456">+62 285 4123 456</a></p>
+            <p><strong>Kontak:</strong> <a href="tel:+6282221665371">+6282221665371</a></p>
           </div>
           
           <div>
             <h3>Konsultasi Dokumen Kapal</h3>
             <p>Bantuan pengurusan dokumen teknis kapal, hak milik kapal, dan Surat Persetujuan Berlayar (SPB).</p>
-            <p><strong>Kontak:</strong> <a href="https://wa.me/6285640012454">+62 856 4001 2454</a></p>
+            <p><strong>Kontak:</strong> <a href="https://wa.me/6282221665371">+6282221665371</a></p>
           </div>
           
           <div>
@@ -137,7 +137,7 @@ export default function Page() {
           <div>
             <h3>Konsultasi Kapal Bekas</h3>
             <p>Fasilitasi jual-beli kapal bekas dengan inspeksi teknis dan negosiasi harga yang transparan.</p>
-            <p><strong>Kontak:</strong> <a href="https://wa.me/6285640012454">+62 856 4001 2454</a></p>
+            <p><strong>Kontak:</strong> <a href="https://wa.me/6282221665371">+6282221665371</a></p>
           </div>
         </div>
       </div>
@@ -165,7 +165,7 @@ export default function Page() {
         <h2>Kunjungan & Tur Fasilitas</h2>
         <p>Kami menyediakan tur fasilitas galangan untuk klien potensial. Kunjungan dapat dijadwalkan dengan menghubungi kami terlebih dahulu. Tim kami akan memandu Anda melihat fasilitas dry dock, workshop, dan peralatan yang tersedia.</p>
         <p><strong>Catatan:</strong> Kunjungan harus dijadwalkan minimal 1 hari sebelumnya untuk memastikan ketersediaan tim dan fasilitas.</p>
-        <a href="https://wa.me/6285640012454?text=Halo,%20saya%20ingin%20menjadwalkan%20kunjungan%20ke%20galangan" className="btn" style={{
+        <a href="https://wa.me/6282221665371?text=Halo,%20saya%20ingin%20menjadwalkan%20kunjungan%20ke%20galangan" className="btn" style={{
           display: 'inline-block', 
           marginTop: '0.5rem',
           background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',

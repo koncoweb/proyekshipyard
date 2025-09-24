@@ -99,7 +99,7 @@ export default function Page() {
 
       <div className="card">
         <h2>Kunjungi Fasilitas Kami</h2>
-        <p>Ingin melihat langsung fasilitas galangan kami? Kami menyediakan tur fasilitas untuk klien potensial. <a href="https://wa.me/6285640012454?text=Halo,%20saya%20ingin%20menjadwalkan%20kunjungan%20ke%20galangan" className="btn" style={{
+        <p>Ingin melihat langsung fasilitas galangan kami? Kami menyediakan tur fasilitas untuk klien potensial. <a href="https://wa.me/6282221665371?text=Halo,%20saya%20ingin%20menjadwalkan%20kunjungan%20ke%20galangan" className="btn" style={{
           display: 'inline-block', 
           marginTop: '0.5rem',
           background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',

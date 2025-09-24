@@ -71,7 +71,7 @@ export default function Page() {
           <h2>Konsultasi & Pemesanan</h2>
           <p>Siap memulai proses pemesanan kapal? Konsultasikan kebutuhan Anda melalui WhatsApp. Tim kami akan membantu menyiapkan spesifikasi, desain, dan estimasi biaya.</p>
           <a
-            href="https://wa.me/6285640012454?text=Halo,%20saya%20ingin%20menanyakan%20proses%20pemesanan%20kapal"
+            href="https://wa.me/6282221665371?text=Halo,%20saya%20ingin%20menanyakan%20proses%20pemesanan%20kapal"
             className="btn"
             style={{
               display: 'inline-block',

@@ -202,7 +202,7 @@ export default function Page() {
         <h2>Mulai Proyek Kapal Anda</h2>
         <p>Siap untuk memulai proyek produksi kapal kayu? Tim kami siap membantu mewujudkan kapal impian Anda dengan kualitas terbaik dan sesuai budget. Konsultasi awal kami gratis dan tanpa komitmen.</p>
         <div style={{display: 'flex', gap: '1rem', marginTop: '1rem'}}>
-          <a className="btn" href="https://wa.me/6285640012454?text=Halo,%20saya%20ingin%20konsultasi%20produksi%20kapal%20kayu" style={{
+          <a className="btn" href="https://wa.me/6282221665371?text=Halo,%20saya%20ingin%20konsultasi%20produksi%20kapal%20kayu" style={{
             background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
             color: 'white',
             border: 'none',

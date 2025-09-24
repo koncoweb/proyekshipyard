@@ -247,7 +247,7 @@ export default function Page() {
         <h2>Mulai Perawatan Kapal Anda</h2>
         <p>Jangan tunggu sampai kapal mengalami kerusakan serius. Lakukan perawatan berkala untuk menjaga performa dan keamanan kapal Anda. Tim kami siap memberikan layanan perawatan terbaik dengan standar kualitas tinggi.</p>
         <div style={{display: 'flex', gap: '1rem', marginTop: '1rem'}}>
-          <a className="btn" href="https://wa.me/6285640012454?text=Halo,%20saya%20ingin%20menjadwalkan%20inspeksi%20dan%20perawatan%20kapal" style={{
+          <a className="btn" href="https://wa.me/6282221665371?text=Halo,%20saya%20ingin%20menjadwalkan%20inspeksi%20dan%20perawatan%20kapal" style={{
             background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
             color: 'white',
             border: 'none',

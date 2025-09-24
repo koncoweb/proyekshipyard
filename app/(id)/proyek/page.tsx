@@ -163,7 +163,7 @@ export default function Page() {
 
       <div className="card">
         <h2>Mulai Proyek Anda</h2>
-        <p>Ingin menjadi bagian dari portofolio proyek kami? Tim kami siap membantu mewujudkan proyek kapal Anda dengan kualitas terbaik. <a href="https://wa.me/6285640012454?text=Halo,%20saya%20ingin%20konsultasi%20proyek%20kapal" className="btn" style={{
+        <p>Ingin menjadi bagian dari portofolio proyek kami? Tim kami siap membantu mewujudkan proyek kapal Anda dengan kualitas terbaik. <a href="https://wa.me/6282221665371?text=Halo,%20saya%20ingin%20konsultasi%20proyek%20kapal" className="btn" style={{
           display: 'inline-block', 
           marginTop: '0.5rem',
           background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',

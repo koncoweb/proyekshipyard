@@ -20,8 +20,12 @@ export default function ContactPage() {
               </div>
               
               <div>
-                <h3 className="font-semibold">Phone</h3>
-                <p className="text-gray-600">+62 XXX XXX XXXX</p>
+                <h3 className="font-semibold">Phone / WhatsApp</h3>
+                <p className="text-gray-600">
+                  <a href="tel:+6282221665371" className="underline">+6282221665371</a>
+                  {" "}|{" "}
+                  <a href="https://wa.me/6282221665371" className="underline">WhatsApp</a>
+                </p>
               </div>
               
               <div>

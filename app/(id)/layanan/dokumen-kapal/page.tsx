@@ -229,7 +229,7 @@ export default function Page() {
         <h2>Mulai Pengurusan Dokumen Kapal Anda</h2>
         <p>Jangan biarkan urusan dokumen menghambat operasional kapal Anda. Tim kami siap membantu mengurus semua dokumen kapal dengan profesional dan efisien. Konsultasi awal kami gratis dan tanpa komitmen.</p>
         <div style={{display: 'flex', gap: '1rem', marginTop: '1rem'}}>
-          <a className="btn" href="https://wa.me/6285640012454?text=Halo,%20saya%20ingin%20konsultasi%20pengurusan%20dokumen%20kapal" style={{
+          <a className="btn" href="https://wa.me/6282221665371?text=Halo,%20saya%20ingin%20konsultasi%20pengurusan%20dokumen%20kapal" style={{
             background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
             color: 'white',
             border: 'none',

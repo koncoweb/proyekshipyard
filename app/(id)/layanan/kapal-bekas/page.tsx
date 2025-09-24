@@ -239,7 +239,7 @@ export default function Page() {
         <h2>Mulai Transaksi Kapal Bekas Anda</h2>
         <p>Apakah Anda ingin menjual atau membeli kapal bekas? Tim kami siap membantu mewujudkan transaksi yang aman dan menguntungkan. Konsultasi awal kami gratis dan tanpa komitmen.</p>
         <div style={{display: 'flex', gap: '1rem', marginTop: '1rem'}}>
-          <a className="btn" href="https://wa.me/6285640012454?text=Halo,%20saya%20ingin%20listing%20kapal%20atau%20mencari%20kapal%20bekas" style={{
+          <a className="btn" href="https://wa.me/6282221665371?text=Halo,%20saya%20ingin%20listing%20kapal%20atau%20mencari%20kapal%20bekas" style={{
             background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
             color: 'white',
             border: 'none',

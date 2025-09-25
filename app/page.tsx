@@ -44,25 +44,44 @@ export const revalidate = 86400;
 export default function Page() {
   return (
     <>
-      <section className="hero">
+      <section className="hero light-text">
         <div className="container hero-inner">
-          <p style={{color:'#0b2a6f',fontWeight:700,margin:'0 0 8px'}}>Batang Shipyard</p>
+          <div className="hero-copy">
+          <p style={{color:'#ffffff',fontWeight:800,margin:'0 0 8px'}}>Batang Shipyard</p>
           <h1 className="hero-title">Produksi, Dokumen, dan Perawatan Kapal.</h1>
           <p className="hero-sub">Solusi lengkap pembangunan kapal, pengurusan dokumen kapal, perawatan kapal, dan jual-beli kapal second.</p>
           <div className="hero-cta">
             <Link href="/layanan" className="btn">Lihat Layanan</Link>
             <Link href="/kontak" className="btn outline">Hubungi Kami</Link>
           </div>
+          </div>
         </div>
       </section>
 
       <section className="container" style={{padding:'28px 0'}}>
         <div className="card" style={{borderColor:'rgba(0,0,0,.08)'}}>
-          <h2 style={{fontSize:20,margin:0,marginBottom:12}}>Navigasi Cepat</h2>
-          <div className="nav-grid" style={{marginTop:8}}>
-            <Link className="card" href="/shipyard-indonesia">Shipyard Indonesia</Link>
-            <Link className="card" href="/layanan">Layanan</Link>
-            <Link className="card" href="/proses-pemesanan" style={{display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+          <div className="section-head">
+            <h2 className="section-title">Produk Kapal</h2>
+            <span className="muted">Jenis kapal unggulan</span>
+          </div>
+          <div className="service-list" style={{marginTop:8}}>
+            <Link href="/produk-kapal#collecting" className="card">Kapal Collecting</Link>
+            <Link href="/produk-kapal#cumi" className="card">Kapal Cumi</Link>
+            <Link href="/produk-kapal#longliner" className="card">Kapal Long Liner</Link>
+            <Link href="/produk-kapal#purse-seine" className="card">Kapal Purse Seine</Link>
+            <Link href="/produk-kapal#cakalang" className="card">Kapal Cakalang</Link>
+          </div>
+        </div>
+
+        <div className="card" style={{borderColor:'rgba(0,0,0,.08)'}}>
+          <div className="section-head">
+            <h2 className="section-title">Navigasi Cepat</h2>
+            <span className="muted">Akses utama situs</span>
+          </div>
+          <div className="tiles" style={{marginTop:8}}>
+            <Link className="tile" href="/shipyard-indonesia">Shipyard Indonesia</Link>
+            <Link className="tile" href="/layanan">Layanan</Link>
+            <Link className="tile" href="/proses-pemesanan" style={{display:'flex',alignItems:'center',justifyContent:'space-between'}}>
               Proses Pemesanan
               <span style={{width:24,height:24,overflow:'hidden',display:'inline-flex',position:'relative'}}>
                 <Image 
@@ -73,15 +92,18 @@ export default function Page() {
                 />
               </span>
             </Link>
-            <Link className="card" href="/proyek">Proyek</Link>
-            <Link className="card" href="/tentang-kami">Tentang Kami</Link>
-            <Link className="card" href="/kontak">Kontak</Link>
+            <Link className="tile" href="/proyek">Proyek</Link>
+            <Link className="tile" href="/tentang-kami">Tentang Kami</Link>
+            <Link className="tile" href="/kontak">Kontak</Link>
           </div>
         </div>
 
         <div className="card" style={{marginTop:16,borderColor:'rgba(0,0,0,.08)'}}>
-          <h2 style={{fontSize:20,margin:0,marginBottom:12}}>Layanan Kami</h2>
-          <div className="nav-grid" style={{marginTop:8}}>
+          <div className="section-head">
+            <h2 className="section-title">Layanan Kami</h2>
+            <span className="muted">Produksi, dokumen, perawatan, jual-beli</span>
+          </div>
+          <div className="service-list" style={{marginTop:8}}>
             <Link className="card media" href="/layanan/produksi-kapal-kayu">
               <div className="media-img" style={{position:'relative',overflow:'hidden'}}>
                 <Image 
@@ -153,9 +175,20 @@ export default function Page() {
           </div>
         </div>
 
+        <div className="cta-band">
+          <h3>Kami mendesain dan mengembangkan web apps yang menyenangkan untuk pengguna dan efektif untuk bisnis.</h3>
+          <div className="cta-actions">
+            <Link href="/kontak" className="btn" aria-label="Kontak kami">Kontak Kami</Link>
+            <Link href="/blog" className="btn outline" aria-label="Baca blog">Baca Blog</Link>
+          </div>
+        </div>
+
         <div className="card" style={{marginTop:16,borderColor:'rgba(0,0,0,.08)'}}>
-          <h2>Artikel Terbaru</h2>
-          <p>Lihat edukasi dan studi kasus di <Link href="/blog">Blog</Link>.</p>
+          <div className="section-head">
+            <h2 className="section-title">Artikel Terbaru</h2>
+            <span className="muted">Edukasi & studi kasus</span>
+          </div>
+          <p style={{marginTop:8}}>Lihat edukasi dan studi kasus di <Link href="/blog">Blog</Link>.</p>
         </div>
       </section>
     </>

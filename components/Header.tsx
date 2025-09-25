@@ -15,7 +15,7 @@ export function Header() {
         { href: '/en/contact', label: 'Contact' },
       ]
     : [
-        { href: '/shipyard-indonesia', label: 'Shipyard Indonesia' },
+        { href: '/produk-kapal', label: 'Produk Kapal' },
         { href: '/layanan', label: 'Layanan' },
         { href: '/proses-pemesanan', label: 'Proses Pemesanan' },
         { href: '/proyek', label: 'Proyek' },

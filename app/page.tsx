@@ -65,11 +65,55 @@ export default function Page() {
             <span className="muted">Jenis kapal unggulan</span>
           </div>
           <div className="service-list" style={{marginTop:8}}>
-            <Link href="/produk-kapal#collecting" className="card">Kapal Collecting</Link>
-            <Link href="/produk-kapal#cumi" className="card">Kapal Cumi</Link>
-            <Link href="/produk-kapal#longliner" className="card">Kapal Long Liner</Link>
-            <Link href="/produk-kapal#purse-seine" className="card">Kapal Purse Seine</Link>
-            <Link href="/produk-kapal#cakalang" className="card">Kapal Cakalang</Link>
+            <Link href="/produk-kapal#collecting" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
+              <div className="media-img" style={{position:'relative',width:160,height:120}}>
+                <Image src={'/images/bg/kapal-compressed/Kapal Collecting 1.jpg'} alt="Kapal Collecting" fill sizes="160px" style={{objectFit:'cover'}} />
+              </div>
+              <div>
+                <strong>Kapal Collecting</strong>
+                <p style={{marginTop:6}}>Kapal pengumpul hasil tangkap dari unit penangkap di laut.</p>
+              </div>
+            </Link>
+
+            <Link href="/produk-kapal#cumi" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
+              <div className="media-img" style={{position:'relative',width:160,height:120}}>
+                <Image src={'/images/bg/kapal-compressed/kapal cumi.jpg'} alt="Kapal Cumi" fill sizes="160px" style={{objectFit:'cover'}} />
+              </div>
+              <div>
+                <strong>Kapal Cumi</strong>
+                <p style={{marginTop:6}}>Optimal untuk operasi dengan lampu atraktor dan handling cepat.</p>
+              </div>
+            </Link>
+
+            <Link href="/produk-kapal#longliner" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
+              <div className="media-img" style={{position:'relative',width:160,height:120}}>
+                <Image src={'/images/bg/kapal-compressed/Kapal Longliner 1.jpeg'} alt="Kapal Long Liner" fill sizes="160px" style={{objectFit:'cover'}} />
+              </div>
+              <div>
+                <strong>Kapal Long Liner</strong>
+                <p style={{marginTop:6}}>Sistem rawai (long line) dengan stabilitas dan ergonomi kerja.</p>
+              </div>
+            </Link>
+
+            <Link href="/produk-kapal#purse-seine" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
+              <div className="media-img" style={{position:'relative',width:160,height:120}}>
+                <Image src={'/images/bg/kapal-compressed/Kapal purse saine 1.jpeg'} alt="Kapal Purse Seine" fill sizes="160px" style={{objectFit:'cover'}} />
+              </div>
+              <div>
+                <strong>Kapal Purse Seine</strong>
+                <p style={{marginTop:6}}>Pengoperasian jaring lingkar dengan ruang palka besar.</p>
+              </div>
+            </Link>
+
+            <Link href="/produk-kapal#cakalang" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
+              <div className="media-img" style={{position:'relative',width:160,height:120}}>
+                <Image src={'/images/bg/kapal-compressed/galangan kapal cakalang.png'} alt="Kapal Cakalang" fill sizes="160px" style={{objectFit:'cover'}} />
+              </div>
+              <div>
+                <strong>Kapal Cakalang</strong>
+                <p style={{marginTop:6}}>Cepat dan efisien untuk target tongkol/cakalang.</p>
+              </div>
+            </Link>
           </div>
         </div>
 
@@ -176,7 +220,7 @@ export default function Page() {
         </div>
 
         <div className="cta-band">
-          <h3>Kami mendesain dan mengembangkan web apps yang menyenangkan untuk pengguna dan efektif untuk bisnis.</h3>
+          <h3>Kami merancang dan membangun kapal yang andal, efisien, dan siap memenuhi kebutuhan operasi Anda.</h3>
           <div className="cta-actions">
             <Link href="/kontak" className="btn" aria-label="Kontak kami">Kontak Kami</Link>
             <Link href="/blog" className="btn outline" aria-label="Baca blog">Baca Blog</Link>

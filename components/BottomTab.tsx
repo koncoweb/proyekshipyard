@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import { Icon } from './Icon';
  
 
-type Item = { href: string, label: string, iconName: 'home' | 'tools' | 'compass' | 'phone' | 'folder' | 'note' };
+type Item = { href: string, label: string, iconName: 'home' | 'tools' | 'services' | 'compass' | 'phone' | 'folder' | 'note' };
 
 function getItems(pathname: string | null): Item[] {
   const isEnglish = pathname?.startsWith('/en');

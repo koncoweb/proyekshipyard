@@ -17,6 +17,21 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function Page() {
   return (
+    <>
+    <section className="hero services-hero">
+      <div className="container hero-inner">
+        <div className="hero-copy">
+          <p style={{color:'#0b2a6f',fontWeight:700,margin:'0 0 8px'}}>Layanan</p>
+          <h1 className="hero-title">Dokumen Kapal & SPB</h1>
+          <p className="hero-sub">Pengurusan dokumen kapal lengkap dan transparan: teknis, kepemilikan, hingga Surat Persetujuan Berlayar.</p>
+          <div className="hero-cta">
+            <a href="/kontak" className="btn">Konsultasi Dokumen</a>
+            <a href="/blog" className="btn outline">Baca Panduan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section className="list">
       <h1>Pengurusan Dokumen Kapal & SPB Lengkap</h1>
       
@@ -31,7 +46,7 @@ export default function Page() {
         <div style={{display: 'grid', gap: '1.5rem', marginTop: '1rem'}}>
           <div>
             <h3>Dokumen Teknis Kapal</h3>
-            <ul>
+            <ul className="gold-list">
               <li><strong>Sertifikat Kelayakan Kapal:</strong> Dokumen yang menyatakan kapal layak berlayar</li>
               <li><strong>Sertifikat Konstruksi:</strong> Dokumen teknis konstruksi kapal</li>
               <li><strong>Sertifikat Peralatan:</strong> Sertifikat untuk peralatan keselamatan dan navigasi</li>
@@ -42,7 +57,7 @@ export default function Page() {
           
           <div>
             <h3>Dokumen Hak Milik Kapal</h3>
-            <ul>
+            <ul className="gold-list">
               <li><strong>Sertifikat Hak Milik Kapal:</strong> Dokumen kepemilikan resmi kapal</li>
               <li><strong>Akta Jual Beli Kapal:</strong> Dokumen transaksi jual beli kapal</li>
               <li><strong>Surat Peralihan Hak:</strong> Dokumen peralihan kepemilikan</li>
@@ -53,7 +68,7 @@ export default function Page() {
           
           <div>
             <h3>Surat Persetujuan Berlayar (SPB)</h3>
-            <ul>
+            <ul className="gold-list">
               <li><strong>SPB Kapal Baru:</strong> Pengurusan SPB untuk kapal yang baru dibuat</li>
               <li><strong>SPB Kapal Bekas:</strong> Pengurusan SPB untuk kapal bekas</li>
               <li><strong>Renewal SPB:</strong> Perpanjangan SPB yang sudah ada</li>
@@ -64,7 +79,7 @@ export default function Page() {
           
           <div>
             <h3>Dokumen Operasional</h3>
-            <ul>
+            <ul className="gold-list">
               <li><strong>Surat Izin Berlayar:</strong> Izin operasional kapal</li>
               <li><strong>Dokumen Awak Kapal:</strong> Sertifikat dan dokumen awak kapal</li>
               <li><strong>Dokumen Kargo:</strong> Dokumen untuk pengangkutan barang</li>
@@ -80,7 +95,7 @@ export default function Page() {
         <div style={{display: 'grid', gap: '1.5rem', marginTop: '1rem'}}>
           <div>
             <h3>1. Konsultasi & Assessment</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Konsultasi kebutuhan dokumen kapal</li>
               <li>Assessment kelengkapan dokumen existing</li>
               <li>Identifikasi dokumen yang diperlukan</li>
@@ -91,7 +106,7 @@ export default function Page() {
           
           <div>
             <h3>2. Persiapan Dokumen</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Pengumpulan dokumen pendukung</li>
               <li>Penyiapan dokumen teknis</li>
               <li>Verifikasi kelengkapan dokumen</li>
@@ -102,7 +117,7 @@ export default function Page() {
           
           <div>
             <h3>3. Pengurusan ke Instansi</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Pengajuan ke instansi terkait</li>
               <li>Koordinasi dengan pihak berwenang</li>
               <li>Follow-up proses pengurusan</li>
@@ -113,7 +128,7 @@ export default function Page() {
           
           <div>
             <h3>4. Penyerahan Dokumen</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Verifikasi dokumen final</li>
               <li>Penyerahan dokumen kepada klien</li>
               <li>Penjelasan isi dokumen</li>
@@ -129,7 +144,7 @@ export default function Page() {
         <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem', marginTop: '1rem'}}>
           <div style={{padding: '1rem', border: '1px solid var(--color-border)', borderRadius: '8px'}}>
             <h3>Kementerian Perhubungan</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Direktorat Jenderal Perhubungan Laut</li>
               <li>Kantor Syahbandar</li>
               <li>Kantor Kesyahbandaran Utama</li>
@@ -139,7 +154,7 @@ export default function Page() {
           
           <div style={{padding: '1rem', border: '1px solid var(--color-border)', borderRadius: '8px'}}>
             <h3>Badan Klasifikasi</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Biro Klasifikasi Indonesia (BKI)</li>
               <li>Lloyd's Register</li>
               <li>Det Norske Veritas (DNV)</li>
@@ -149,7 +164,7 @@ export default function Page() {
           
           <div style={{padding: '1rem', border: '1px solid var(--color-border)', borderRadius: '8px'}}>
             <h3>Instansi Lainnya</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Kementerian Kelautan dan Perikanan</li>
               <li>Badan Pusat Statistik</li>
               <li>Kantor Pajak</li>
@@ -161,7 +176,7 @@ export default function Page() {
 
       <div className="card">
         <h2>Keunggulan Layanan Kami</h2>
-        <ul>
+        <ul className="gold-list">
           <li><strong>Tim Berpengalaman:</strong> Tim yang berpengalaman dalam pengurusan dokumen maritim</li>
           <li><strong>Proses Cepat:</strong> Proses pengurusan yang efisien dan tepat waktu</li>
           <li><strong>Transparan:</strong> Informasi biaya dan progress yang transparan</li>
@@ -203,7 +218,7 @@ export default function Page() {
         <div style={{display: 'grid', gap: '1rem', marginTop: '1rem'}}>
           <div>
             <h3>Dokumen Kapal</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Gambar konstruksi kapal</li>
               <li>Spesifikasi teknis kapal</li>
               <li>Sertifikat material</li>
@@ -214,7 +229,7 @@ export default function Page() {
           
           <div>
             <h3>Dokumen Pemilik</h3>
-            <ul>
+            <ul className="gold-list">
               <li>KTP pemilik kapal</li>
               <li>NPWP perusahaan (jika badan hukum)</li>
               <li>Akta pendirian perusahaan</li>
@@ -244,6 +259,7 @@ export default function Page() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

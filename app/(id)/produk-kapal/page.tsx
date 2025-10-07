@@ -4,11 +4,36 @@ import Image from 'next/image';
 export const revalidate = 86400;
 
 const products = [
-  { id: 'collecting', key: 'Kapal Collecting 1.jpg', title: 'Kapal Collecting', desc: 'Dirancang untuk mengumpulkan hasil tangkapan dari kapal-kapal lebih kecil di laut, efisien dan aman menuju pelabuhan.' },
-  { id: 'cumi', key: 'kapal cumi.jpg', title: 'Kapal Cumi', desc: 'Spesifik untuk penangkapan cumi dengan tata letak dek yang optimal bagi peralatan light fishing dan handling hasil.' },
-  { id: 'longliner', key: 'Kapal Longliner 1.jpeg', title: 'Kapal Long Liner', desc: 'Kapal dengan sistem rawai (long line) untuk target ikan bernilai tinggi, struktur haluan kokoh, dek kerja ergonomis.' },
-  { id: 'purse-seine', key: 'Kapal purse saine 1.jpeg', title: 'Kapal Purse Seine', desc: 'Pengoperasian jaring lingkar (pukat cincin) dengan stabilitas tinggi dan ruang palka besar untuk menjaga kualitas hasil.' },
-  { id: 'cakalang', key: 'galangan kapal cakalang.png', title: 'Kapal Cakalang', desc: 'Optimal untuk target tongkol/cakalang dengan efisiensi bahan bakar dan handling cepat di dek.' }
+  {
+    id: 'collecting',
+    image: '/images/collecting/galangan-kapal-collecting-jawatengah.jpeg',
+    title: 'Kapal Collecting',
+    desc: 'Dirancang untuk mengumpulkan hasil tangkapan dari kapal-kapal lebih kecil di laut, efisien dan aman menuju pelabuhan.'
+  },
+  {
+    id: 'cumi',
+    image: '/images/cumi/galangan-kapal-cumi-jawatengah.jpeg',
+    title: 'Kapal Cumi',
+    desc: 'Spesifik untuk penangkapan cumi dengan tata letak dek yang optimal bagi peralatan light fishing dan handling hasil.'
+  },
+  {
+    id: 'longliner',
+    image: '/images/longliner/galangan-kapal-longliner-jawatengah.jpeg',
+    title: 'Kapal Long Liner',
+    desc: 'Kapal dengan sistem rawai (long line) untuk target ikan bernilai tinggi, struktur haluan kokoh, dek kerja ergonomis.'
+  },
+  {
+    id: 'purse-seine',
+    image: '/images/purseseine/galangan-kapal-purse-seine-jawatengah.jpeg',
+    title: 'Kapal Purse Seine',
+    desc: 'Pengoperasian jaring lingkar (pukat cincin) dengan stabilitas tinggi dan ruang palka besar untuk menjaga kualitas hasil.'
+  },
+  {
+    id: 'cakalang',
+    image: '/images/cakalang/galangan-kapal-cakalang-jawatengah.jpeg',
+    title: 'Kapal Cakalang',
+    desc: 'Optimal untuk target tongkol/cakalang dengan efisiensi bahan bakar dan handling cepat di dek.'
+  }
 ];
 
 export default function Page() {
@@ -43,10 +68,10 @@ export default function Page() {
 
           <div className="service-list" style={{marginTop:8}}>
             {products.map(p => (
-              <a key={p.id} href={`#${p.id}`} className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
+              <a key={p.id} href={`/produk-kapal/${p.id}`} className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
                 <div className="media-img" style={{position:'relative',width:160,height:120}}>
                   <Image
-                    src={`/images/bg/kapal-compressed/${p.key}`}
+                    src={p.image}
                     alt={p.title}
                     fill
                     sizes="160px"

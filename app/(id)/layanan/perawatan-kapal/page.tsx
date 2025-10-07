@@ -17,6 +17,21 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function Page() {
   return (
+    <>
+    <section className="hero services-hero">
+      <div className="container hero-inner">
+        <div className="hero-copy">
+          <p style={{color:'#0b2a6f',fontWeight:700,margin:'0 0 8px'}}>Layanan</p>
+          <h1 className="hero-title">Perawatan Kapal</h1>
+          <p className="hero-sub">Maintenance dan repair kapal kayu yang terukur, cepat, dan rapi—agar kapal selalu siap berlayar.</p>
+          <div className="hero-cta">
+            <a href="/kontak" className="btn">Jadwalkan Inspeksi</a>
+            <a href="/proyek" className="btn outline">Lihat Proyek</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section className="list">
       <h1>Layanan Perawatan Kapal Lengkap</h1>
       
@@ -31,7 +46,7 @@ export default function Page() {
         <div style={{display: 'grid', gap: '1.5rem', marginTop: '1rem'}}>
           <div>
             <h3>Inspeksi & Pemeriksaan</h3>
-            <ul>
+            <ul className="gold-list">
               <li><strong>Inspeksi Rutin:</strong> Pemeriksaan berkala untuk mendeteksi masalah sejak dini</li>
               <li><strong>Inspeksi Lambung:</strong> Pemeriksaan kondisi lambung dan struktur kapal</li>
               <li><strong>Inspeksi Mesin:</strong> Pemeriksaan kondisi mesin dan sistem propulsi</li>
@@ -42,7 +57,7 @@ export default function Page() {
           
           <div>
             <h3>Perbaikan Lambung & Struktur</h3>
-            <ul>
+            <ul className="gold-list">
               <li><strong>Perbaikan Lambung:</strong> Perbaikan kerusakan pada lambung kapal</li>
               <li><strong>Penggantian Kayu:</strong> Penggantian bagian kayu yang rusak</li>
               <li><strong>Perbaikan Struktur:</strong> Perbaikan kerangka dan struktur kapal</li>
@@ -53,7 +68,7 @@ export default function Page() {
           
           <div>
             <h3>Perawatan Mesin & Sistem</h3>
-            <ul>
+            <ul className="gold-list">
               <li><strong>Service Mesin:</strong> Perawatan berkala mesin utama dan bantu</li>
               <li><strong>Penggantian Oli:</strong> Penggantian oli mesin dan sistem hidrolik</li>
               <li><strong>Perbaikan Sistem Pendingin:</strong> Perbaikan sistem pendingin mesin</li>
@@ -64,7 +79,7 @@ export default function Page() {
           
           <div>
             <h3>Pengecatan & Finishing</h3>
-            <ul>
+            <ul className="gold-list">
               <li><strong>Pengecatan Lambung:</strong> Pengecatan ulang lambung kapal</li>
               <li><strong>Pengecatan Dek:</strong> Pengecatan dan finishing dek kapal</li>
               <li><strong>Anti Fouling:</strong> Aplikasi cat anti fouling untuk mencegah tumbuhan laut</li>
@@ -80,7 +95,7 @@ export default function Page() {
         <div style={{display: 'grid', gap: '1rem', marginTop: '1rem'}}>
           <div style={{padding: '1rem', border: '1px solid var(--color-border)', borderRadius: '8px'}}>
             <h3>Maintenance Bulanan</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Inspeksi visual lambung dan struktur</li>
               <li>Pemeriksaan sistem kelistrikan</li>
               <li>Pembersihan filter dan sistem pendingin</li>
@@ -92,7 +107,7 @@ export default function Page() {
           
           <div style={{padding: '1rem', border: '1px solid var(--color-border)', borderRadius: '8px'}}>
             <h3>Maintenance 3 Bulanan</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Inspeksi detail lambung dan struktur</li>
               <li>Service mesin dan sistem propulsi</li>
               <li>Pemeriksaan sistem hidrolik</li>
@@ -104,7 +119,7 @@ export default function Page() {
           
           <div style={{padding: '1rem', border: '1px solid var(--color-border)', borderRadius: '8px'}}>
             <h3>Maintenance Tahunan</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Inspeksi komprehensif seluruh kapal</li>
               <li>Pengecatan ulang lambung</li>
               <li>Overhaul mesin dan sistem utama</li>
@@ -121,7 +136,7 @@ export default function Page() {
         <div style={{display: 'grid', gap: '1rem', marginTop: '1rem'}}>
           <div>
             <h3>Emergency Repair</h3>
-            <ul>
+            <ul className="gold-list">
               <li><strong>Perbaikan Kebocoran:</strong> Penanganan kebocoran darurat</li>
               <li><strong>Perbaikan Mesin:</strong> Perbaikan mesin yang mogok</li>
               <li><strong>Perbaikan Sistem Kelistrikan:</strong> Penanganan masalah kelistrikan</li>
@@ -132,7 +147,7 @@ export default function Page() {
           
           <div>
             <h3>Layanan 24/7</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Hotline darurat 24 jam</li>
               <li>Tim teknis siap siaga</li>
               <li>Perbaikan di lokasi (jika memungkinkan)</li>
@@ -148,7 +163,7 @@ export default function Page() {
         <div style={{display: 'grid', gap: '1rem', marginTop: '1rem'}}>
           <div>
             <h3>Sparepart Mesin</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Sparepart mesin diesel (Yanmar, Mitsubishi, dll)</li>
               <li>Filter oli, bahan bakar, dan udara</li>
               <li>Belt, bearing, dan komponen mekanis</li>
@@ -159,7 +174,7 @@ export default function Page() {
           
           <div>
             <h3>Material Konstruksi</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Kayu jati, merbau, dan kayu maritim lainnya</li>
               <li>Cat marine dan anti fouling</li>
               <li>Primer dan undercoat</li>
@@ -170,7 +185,7 @@ export default function Page() {
           
           <div>
             <h3>Peralatan Keselamatan</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Life jacket dan peralatan keselamatan</li>
               <li>Fire extinguisher dan sistem pemadam</li>
               <li>Peralatan navigasi dan komunikasi</li>
@@ -183,7 +198,7 @@ export default function Page() {
 
       <div className="card">
         <h2>Keunggulan Layanan Kami</h2>
-        <ul>
+        <ul className="gold-list">
           <li><strong>Tim Teknis Berpengalaman:</strong> Tim yang berpengalaman dalam perawatan kapal kayu</li>
           <li><strong>Fasilitas Lengkap:</strong> Dry dock dan peralatan modern untuk perawatan optimal</li>
           <li><strong>Sparepart Original:</strong> Ketersediaan sparepart original dengan harga kompetitif</li>
@@ -199,7 +214,7 @@ export default function Page() {
         <div style={{display: 'grid', gap: '1.5rem', marginTop: '1rem'}}>
           <div>
             <h3>1. Konsultasi & Assessment</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Konsultasi kebutuhan perawatan</li>
               <li>Inspeksi awal kondisi kapal</li>
               <li>Identifikasi masalah dan kebutuhan</li>
@@ -210,7 +225,7 @@ export default function Page() {
           
           <div>
             <h3>2. Penjadwalan & Persiapan</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Penjadwalan perawatan</li>
               <li>Persiapan material dan sparepart</li>
               <li>Persiapan peralatan dan tim</li>
@@ -221,7 +236,7 @@ export default function Page() {
           
           <div>
             <h3>3. Pelaksanaan Perawatan</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Pelaksanaan perawatan sesuai rencana</li>
               <li>Monitoring progress pekerjaan</li>
               <li>Quality control di setiap tahap</li>
@@ -232,7 +247,7 @@ export default function Page() {
           
           <div>
             <h3>4. Testing & Penyerahan</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Testing sistem dan peralatan</li>
               <li>Inspeksi final hasil pekerjaan</li>
               <li>Penyerahan kapal kepada pemilik</li>
@@ -262,6 +277,7 @@ export default function Page() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

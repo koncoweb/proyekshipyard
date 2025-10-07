@@ -17,6 +17,21 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function Page() {
   return (
+    <>
+    <section className="hero services-hero">
+      <div className="container hero-inner">
+        <div className="hero-copy">
+          <p style={{color:'#0b2a6f',fontWeight:700,margin:'0 0 8px'}}>Layanan</p>
+          <h1 className="hero-title">Produksi Kapal Kayu</h1>
+          <p className="hero-sub">Konstruksi kapal kayu berkualitas, dari konsultasi spesifikasi hingga sea trial dan dokumen siap berlayar.</p>
+          <div className="hero-cta">
+            <a href="/kontak" className="btn">Konsultasi Gratis</a>
+            <a href="/proyek" className="btn outline">Lihat Proyek</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section className="list">
       <h1>Produksi Kapal Kayu Berkualitas Tinggi</h1>
       
@@ -32,7 +47,7 @@ export default function Page() {
           <div>
             <h3>1. Konsultasi Spesifikasi</h3>
             <p>Konsultasi mendalam untuk menentukan spesifikasi kapal sesuai kebutuhan Anda, termasuk:</p>
-            <ul>
+            <ul className="gold-list">
               <li>Ukuran kapal (panjang, lebar, tinggi)</li>
               <li>Gross Tonnage (GT) yang diinginkan</li>
               <li>Jenis dan fungsi kapal</li>
@@ -44,7 +59,7 @@ export default function Page() {
           <div>
             <h3>2. Desain Teknis</h3>
             <p>Tim teknis kami akan membuat desain detail meliputi:</p>
-            <ul>
+            <ul className="gold-list">
               <li>Gambar konstruksi lambung</li>
               <li>Layout interior dan sistem</li>
               <li>Spesifikasi material dan peralatan</li>
@@ -56,7 +71,7 @@ export default function Page() {
           <div>
             <h3>3. Presentasi Desain & RAB</h3>
             <p>Presentasi komprehensif yang mencakup:</p>
-            <ul>
+            <ul className="gold-list">
               <li>Presentasi desain 3D dan gambar teknis</li>
               <li>Rincian Anggaran Biaya (RAB) detail</li>
               <li>Jadwal pengerjaan proyek</li>
@@ -68,7 +83,7 @@ export default function Page() {
           <div>
             <h3>4. Negosiasi & Kesepakatan</h3>
             <p>Proses negosiasi yang transparan meliputi:</p>
-            <ul>
+            <ul className="gold-list">
               <li>Negosiasi harga dan termin pembayaran</li>
               <li>Penyesuaian spesifikasi sesuai budget</li>
               <li>Kesepakatan jadwal pengerjaan</li>
@@ -80,7 +95,7 @@ export default function Page() {
           <div>
             <h3>5. Penandatanganan SPK</h3>
             <p>Kontrak resmi melalui notaris dengan dokumen lengkap:</p>
-            <ul>
+            <ul className="gold-list">
               <li>Surat Perjanjian Kerja (SPK) notaris</li>
               <li>Gambar teknis final</li>
               <li>RAB final yang disepakati</li>
@@ -97,7 +112,7 @@ export default function Page() {
           <div style={{padding: '1rem', border: '1px solid var(--color-border)', borderRadius: '8px'}}>
             <h3>Kapal Penangkap Ikan</h3>
             <p>Kapal khusus untuk penangkapan ikan dengan fitur:</p>
-            <ul>
+            <ul className="gold-list">
               <li>Ruang pendingin ikan</li>
               <li>Sistem penangkapan modern</li>
               <li>Mesin diesel berkekuatan tinggi</li>
@@ -108,7 +123,7 @@ export default function Page() {
           <div style={{padding: '1rem', border: '1px solid var(--color-border)', borderRadius: '8px'}}>
             <h3>Kapal Transportasi</h3>
             <p>Kapal untuk transportasi barang dan penumpang:</p>
-            <ul>
+            <ul className="gold-list">
               <li>Ruang kargo yang luas</li>
               <li>Sistem loading yang efisien</li>
               <li>Fasilitas penumpang yang nyaman</li>
@@ -119,7 +134,7 @@ export default function Page() {
           <div style={{padding: '1rem', border: '1px solid var(--color-border)', borderRadius: '8px'}}>
             <h3>Kapal Wisata</h3>
             <p>Kapal untuk keperluan wisata dan rekreasi:</p>
-            <ul>
+            <ul className="gold-list">
               <li>Desain yang menarik dan nyaman</li>
               <li>Fasilitas wisata lengkap</li>
               <li>Sistem keamanan tinggi</li>
@@ -130,7 +145,7 @@ export default function Page() {
           <div style={{padding: '1rem', border: '1px solid var(--color-border)', borderRadius: '8px'}}>
             <h3>Kapal Khusus</h3>
             <p>Kapal dengan fungsi khusus sesuai kebutuhan:</p>
-            <ul>
+            <ul className="gold-list">
               <li>Kapal patroli</li>
               <li>Kapal penelitian</li>
               <li>Kapal bantuan</li>
@@ -145,7 +160,7 @@ export default function Page() {
         <div style={{display: 'grid', gap: '1rem', marginTop: '1rem'}}>
           <div>
             <h3>Jenis Kayu yang Digunakan</h3>
-            <ul>
+            <ul className="gold-list">
               <li><strong>Kayu Jati:</strong> Untuk konstruksi utama, tahan lama dan kuat</li>
               <li><strong>Kayu Merbau:</strong> Untuk lambung, tahan air dan cuaca</li>
               <li><strong>Kayu Bangkirai:</strong> Untuk dek dan struktur, tahan terhadap cuaca ekstrem</li>
@@ -156,7 +171,7 @@ export default function Page() {
           
           <div>
             <h3>Standar Kualitas</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Kayu berkualitas tinggi dengan sertifikat</li>
               <li>Pengawetan kayu sesuai standar maritim</li>
               <li>Konstruksi mengikuti standar klasifikasi kapal</li>
@@ -189,7 +204,7 @@ export default function Page() {
 
       <div className="card">
         <h2>Garansi & After-Sales</h2>
-        <ul>
+        <ul className="gold-list">
           <li><strong>Garansi Konstruksi:</strong> 2 tahun untuk konstruksi lambung dan struktur</li>
           <li><strong>Garansi Mesin:</strong> Sesuai dengan garansi pabrik mesin</li>
           <li><strong>Service Rutin:</strong> Layanan perawatan rutin dengan harga khusus</li>
@@ -217,6 +232,7 @@ export default function Page() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

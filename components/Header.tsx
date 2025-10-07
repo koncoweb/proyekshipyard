@@ -15,7 +15,17 @@ export function Header() {
         { href: '/en/contact', label: 'Contact' },
       ]
     : [
-        { href: '/produk-kapal', label: 'Produk Kapal' },
+        {
+          href: '/produk-kapal',
+          label: 'Produk Kapal',
+          children: [
+            { href: '/produk-kapal/collecting', label: 'Kapal Collecting' },
+            { href: '/produk-kapal/cumi', label: 'Kapal Cumi' },
+            { href: '/produk-kapal/longliner', label: 'Kapal Long Liner' },
+            { href: '/produk-kapal/purse-seine', label: 'Kapal Purse Seine' },
+            { href: '/produk-kapal/cakalang', label: 'Kapal Cakalang' },
+          ],
+        },
         { href: '/layanan', label: 'Layanan' },
         { href: '/proses-pemesanan', label: 'Proses Pemesanan' },
         { href: '/proyek', label: 'Proyek' },
@@ -40,7 +50,18 @@ export function Header() {
 
         <nav aria-label="Primary" className="pp-nav">
           {navItems.map(item => (
-            <Link key={item.href} href={item.href as any}>{item.label}</Link>
+            (item as any).children ? (
+              <div key={item.href} className="has-submenu">
+                <Link href={item.href as any}>{item.label}</Link>
+                <div className="submenu" role="menu">
+                  {(item as any).children.map((child: any) => (
+                    <Link key={child.href} href={child.href as any} role="menuitem">{child.label}</Link>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <Link key={item.href} href={item.href as any}>{item.label}</Link>
+            )
           ))}
         </nav>
 
@@ -71,13 +92,13 @@ export function Header() {
               else target = '/en';
             }
             return (
-              <Link href={target as any} className="pp-btn outline" aria-label={isEnglish ? 'Switch to Indonesian' : 'Beralih ke Bahasa Inggris'}>
+              <Link href={target as any} className="gold-pill" aria-label={isEnglish ? 'Switch to Indonesian' : 'Beralih ke Bahasa Inggris'}>
                 {isEnglish ? 'ID' : 'EN'}
               </Link>
             );
           })()}
           {!isEnglish && (
-            <Link href={"/blog" as any} className="pp-btn outline">Blog</Link>
+            <Link href={"/blog" as any} className="gold-pill">Blog</Link>
           )}
           <Link href={(isEnglish ? '/en/contact' : '/kontak') as any} className="pp-btn primary">
             {isEnglish ? 'Contact Us' : 'Hubungi Kami'}

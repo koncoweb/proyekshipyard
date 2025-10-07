@@ -43,7 +43,7 @@ export default function Page() {
 
         <div className="card">
           <h2>Keunggulan Kami</h2>
-          <ul>
+          <ul className="gold-list">
             <li><strong>Tim Teknis Berpengalaman:</strong> Tim kami terdiri dari ahli-ahli berpengalaman dalam bidang konstruksi kapal dan dokumen maritim</li>
             <li><strong>Kualitas Terjamin:</strong> Setiap proyek dikerjakan dengan standar kualitas tinggi dan mengikuti regulasi yang berlaku</li>
             <li><strong>Layanan Komprehensif:</strong> Dari konsultasi awal hingga pengurusan dokumen, kami menyediakan layanan end-to-end</li>

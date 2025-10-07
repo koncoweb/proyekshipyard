@@ -16,9 +16,9 @@ export function Footer() {
           />
           <span>© {year} Batang Shipyard Indonesia. All rights reserved.</span>
         </div>
-        <nav aria-label="Footer">
-          <a href="/kontak" style={{marginRight:12}}>Kontak</a>
-          <a href="/tentang-kami">Tentang Kami</a>
+        <nav aria-label="Footer" style={{display:'flex',alignItems:'center',gap:12}}>
+          <a href="/kontak" className="gold-pill">Kontak</a>
+          <a href="/tentang-kami" className="gold-pill">Tentang Kami</a>
         </nav>
       </div>
     </footer>

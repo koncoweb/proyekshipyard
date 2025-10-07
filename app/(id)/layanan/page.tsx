@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Icon } from '@/components/Icon';
 export const revalidate = 86400;
 
 export default function Page() {
@@ -21,21 +22,35 @@ export default function Page() {
           <h2 style={{fontSize:20,margin:0,marginBottom:12}}>Layanan Kami</h2>
           <p style={{marginTop:6}}>Pilih layanan sesuai kebutuhan Anda. Tim kami siap membantu dari konsultasi awal hingga eksekusi proyek dengan pendampingan penuh.</p>
           <div className="nav-grid" style={{marginTop:8}}>
-            <Link className="card" href="/layanan/produksi-kapal-kayu">Produksi Kapal Kayu</Link>
-            <Link className="card" href="/layanan/dokumen-kapal">Dokumen Kapal & SPB</Link>
-            <Link className="card" href="/layanan/perawatan-kapal">Perawatan Kapal</Link>
-            <Link className="card" href="/layanan/kapal-bekas">Kapal Second</Link>
+            <Link className="card" href="/layanan/produksi-kapal-kayu" style={{display:'grid',gridTemplateColumns:'24px 1fr',gap:10,alignItems:'center'}}>
+              <Icon name="ship" />
+              Produksi Kapal Kayu
+            </Link>
+            <Link className="card" href="/layanan/dokumen-kapal" style={{display:'grid',gridTemplateColumns:'24px 1fr',gap:10,alignItems:'center'}}>
+              <Icon name="document" />
+              Dokumen Kapal & SPB
+            </Link>
+            <Link className="card" href="/layanan/perawatan-kapal" style={{display:'grid',gridTemplateColumns:'24px 1fr',gap:10,alignItems:'center'}}>
+              <Icon name="wrench" />
+              Perawatan Kapal
+            </Link>
+            <Link className="card" href="/layanan/kapal-bekas" style={{display:'grid',gridTemplateColumns:'24px 1fr',gap:10,alignItems:'center'}}>
+              <Icon name="folder" />
+              Kapal Second
+            </Link>
           </div>
         </div>
 
         <div className="card" style={{marginTop:16,borderColor:'rgba(0,0,0,.08)'}}>
           <h2 style={{fontSize:20,margin:0,marginBottom:12}}>Mengapa Memilih Batang Shipyard?</h2>
-          <ul>
-            <li><strong>Pengalaman Teknis:</strong> Tim ahli dengan rekam jejak proyek sukses di berbagai kelas kapal.</li>
-            <li><strong>Proses Transparan:</strong> Estimasi biaya, timeline, serta progress yang jelas di setiap tahap.</li>
-            <li><strong>Standar Maritim:</strong> Pengerjaan mengikuti regulasi dan standar klasifikasi yang berlaku.</li>
-            <li><strong>Dukungan End-to-End:</strong> Pendampingan dari konsultasi hingga dokumen berlayar.</li>
+          <ul className="gold-list">
+            <li><span className="gold-bullet" aria-hidden></span><div><strong>Pengalaman Teknis:</strong> Tim ahli dengan rekam jejak proyek sukses di berbagai kelas kapal. Kami memahami detail konstruksi kayu tropis, permesinan, hingga sistem pendingin hasil tangkap untuk menjaga kualitas ikan.</div></li>
+            <li><span className="gold-bullet" aria-hidden></span><div><strong>Proses Transparan:</strong> Estimasi biaya, timeline, serta progress yang jelas di setiap tahap. Anda akan menerima update rutin dan dokumentasi pelaksanaan mulai desain, pemotongan material, perakitan, hingga sea trial.</div></li>
+            <li><span className="gold-bullet" aria-hidden></span><div><strong>Standar Maritim:</strong> Pengerjaan mengikuti regulasi dan standar klasifikasi yang berlaku, termasuk aspek stabilitas, keselamatan, dan kelistrikan kapal.</div></li>
+            <li><span className="gold-bullet" aria-hidden></span><div><strong>Dukungan End-to-End:</strong> Pendampingan dari konsultasi, rancangan teknis, pengadaan material, supervisi pengerjaan, sampai pengurusan dokumen berlayar.</div></li>
           </ul>
+
+          <p style={{marginTop:12}}>Dengan proses yang rapi dan sumber daya berpengalaman, kami membantu pemilik kapal mencapai target operasi dengan biaya terukur dan mutu pengerjaan yang dapat dipertanggungjawabkan.</p>
         </div>
 
         <div className="card" style={{marginTop:16,borderColor:'rgba(0,0,0,.08)'}}>

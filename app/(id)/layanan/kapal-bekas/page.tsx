@@ -17,6 +17,21 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function Page() {
   return (
+    <>
+    <section className="hero services-hero">
+      <div className="container hero-inner">
+        <div className="hero-copy">
+          <p style={{color:'#0b2a6f',fontWeight:700,margin:'0 0 8px'}}>Layanan</p>
+          <h1 className="hero-title">Jual-Beli Kapal Second</h1>
+          <p className="hero-sub">Broker dan konsultan untuk transaksi kapal second yang aman, transparan, dan menguntungkan.</p>
+          <div className="hero-cta">
+            <a href="/kontak" className="btn">Konsultasi Transaksi</a>
+            <a href="/proyek" className="btn outline">Lihat Proyek</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section className="list">
       <h1>Layanan Jual-Beli Kapal Second Profesional</h1>
       
@@ -31,7 +46,7 @@ export default function Page() {
         <div style={{display: 'grid', gap: '1.5rem', marginTop: '1rem'}}>
           <div>
             <h3>Listing & Pencarian Kapal</h3>
-            <ul>
+            <ul className="gold-list">
               <li><strong>Database Kapal Second:</strong> Akses ke database kapal second yang tersedia</li>
               <li><strong>Pencarian Sesuai Kebutuhan:</strong> Pencarian kapal berdasarkan spesifikasi yang diinginkan</li>
               <li><strong>Listing Gratis:</strong> Layanan listing kapal untuk penjual tanpa biaya</li>
@@ -42,7 +57,7 @@ export default function Page() {
           
           <div>
             <h3>Inspeksi & Penilaian Teknis</h3>
-            <ul>
+            <ul className="gold-list">
               <li><strong>Inspeksi Kondisi Kapal:</strong> Pemeriksaan menyeluruh kondisi kapal</li>
               <li><strong>Penilaian Nilai Kapal:</strong> Penilaian fair value berdasarkan kondisi teknis</li>
               <li><strong>Laporan Inspeksi:</strong> Laporan detail kondisi kapal dan rekomendasi</li>
@@ -53,7 +68,7 @@ export default function Page() {
           
           <div>
             <h3>Negosiasi & Mediasi</h3>
-            <ul>
+            <ul className="gold-list">
               <li><strong>Negosiasi Harga:</strong> Fasilitasi negosiasi harga yang adil</li>
               <li><strong>Mediasi Persyaratan:</strong> Mediasi persyaratan transaksi</li>
               <li><strong>Konsultasi Hukum:</strong> Konsultasi aspek hukum transaksi</li>
@@ -64,7 +79,7 @@ export default function Page() {
           
           <div>
             <h3>Dokumentasi & Kontrak</h3>
-            <ul>
+            <ul className="gold-list">
               <li><strong>Penyusunan Kontrak:</strong> Penyusunan kontrak jual beli yang legal</li>
               <li><strong>Sale Form:</strong> Dokumen sale form sesuai standar maritim</li>
               <li><strong>Dokumen Transfer:</strong> Pengurusan dokumen transfer kepemilikan</li>
@@ -80,7 +95,7 @@ export default function Page() {
         <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem', marginTop: '1rem'}}>
           <div style={{padding: '1rem', border: '1px solid var(--color-border)', borderRadius: '8px'}}>
             <h3>Kapal Penangkap Ikan</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Kapal pukat cincin</li>
               <li>Kapal longline</li>
               <li>Kapal purse seine</li>
@@ -91,7 +106,7 @@ export default function Page() {
           
           <div style={{padding: '1rem', border: '1px solid var(--color-border)', borderRadius: '8px'}}>
             <h3>Kapal Transportasi</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Kapal kargo</li>
               <li>Kapal penumpang</li>
               <li>Kapal ferry</li>
@@ -102,7 +117,7 @@ export default function Page() {
           
           <div style={{padding: '1rem', border: '1px solid var(--color-border)', borderRadius: '8px'}}>
             <h3>Kapal Wisata</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Kapal pesiar</li>
               <li>Kapal diving</li>
               <li>Kapal charter</li>
@@ -113,7 +128,7 @@ export default function Page() {
           
           <div style={{padding: '1rem', border: '1px solid var(--color-border)', borderRadius: '8px'}}>
             <h3>Kapal Khusus</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Kapal patroli</li>
               <li>Kapal penelitian</li>
               <li>Kapal bantuan</li>
@@ -129,7 +144,7 @@ export default function Page() {
         <div style={{display: 'grid', gap: '1.5rem', marginTop: '1rem'}}>
           <div>
             <h3>1. Listing & Pencarian</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Listing kapal yang akan dijual</li>
               <li>Pencarian kapal sesuai kebutuhan pembeli</li>
               <li>Penyaringan kapal yang sesuai kriteria</li>
@@ -140,7 +155,7 @@ export default function Page() {
           
           <div>
             <h3>2. Inspeksi & Penilaian</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Inspeksi kondisi fisik kapal</li>
               <li>Pemeriksaan dokumen kapal</li>
               <li>Penilaian nilai kapal</li>
@@ -151,7 +166,7 @@ export default function Page() {
           
           <div>
             <h3>3. Negosiasi & Kesepakatan</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Fasilitasi negosiasi harga</li>
               <li>Mediasi persyaratan transaksi</li>
               <li>Penyusunan kesepakatan awal</li>
@@ -162,7 +177,7 @@ export default function Page() {
           
           <div>
             <h3>4. Dokumentasi & Transfer</h3>
-            <ul>
+            <ul className="gold-list">
               <li>Penyusunan kontrak jual beli</li>
               <li>Pengurusan dokumen transfer</li>
               <li>Verifikasi legalitas dokumen</li>
@@ -175,7 +190,7 @@ export default function Page() {
 
       <div className="card">
         <h2>Keunggulan Layanan Kami</h2>
-        <ul>
+        <ul className="gold-list">
           <li><strong>Tim Berpengalaman:</strong> Tim yang berpengalaman dalam transaksi kapal second</li>
           <li><strong>Inspeksi Teknis:</strong> Inspeksi teknis yang menyeluruh dan akurat</li>
           <li><strong>Penilaian Fair:</strong> Penilaian nilai kapal yang fair dan objektif</li>
@@ -254,6 +269,7 @@ export default function Page() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

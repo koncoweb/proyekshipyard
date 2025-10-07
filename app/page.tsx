@@ -64,10 +64,10 @@ export default function Page() {
             <h2 className="section-title">Produk Kapal</h2>
             <span className="muted">Jenis kapal unggulan</span>
           </div>
-          <div className="service-list" style={{marginTop:8}}>
-            <Link href="/produk-kapal#collecting" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
+          <div className="service-list two-col" style={{marginTop:8}}>
+            <Link href="/produk-kapal/collecting" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
               <div className="media-img" style={{position:'relative',width:160,height:120}}>
-                <Image src={'/images/bg/kapal-compressed/Kapal Collecting 1.jpg'} alt="Kapal Collecting" fill sizes="160px" style={{objectFit:'cover'}} />
+                <Image src={'/images/collecting/galangan-kapal-collecting-jawatengah.jpeg'} alt="Kapal Collecting" fill sizes="160px" style={{objectFit:'cover'}} />
               </div>
               <div>
                 <strong>Kapal Collecting</strong>
@@ -75,9 +75,9 @@ export default function Page() {
               </div>
             </Link>
 
-            <Link href="/produk-kapal#cumi" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
+            <Link href="/produk-kapal/cumi" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
               <div className="media-img" style={{position:'relative',width:160,height:120}}>
-                <Image src={'/images/bg/kapal-compressed/kapal cumi.jpg'} alt="Kapal Cumi" fill sizes="160px" style={{objectFit:'cover'}} />
+                <Image src={'/images/cumi/galangan-kapal-cumi-jawatengah.jpeg'} alt="Kapal Cumi" fill sizes="160px" style={{objectFit:'cover'}} />
               </div>
               <div>
                 <strong>Kapal Cumi</strong>
@@ -85,9 +85,9 @@ export default function Page() {
               </div>
             </Link>
 
-            <Link href="/produk-kapal#longliner" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
+            <Link href="/produk-kapal/longliner" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
               <div className="media-img" style={{position:'relative',width:160,height:120}}>
-                <Image src={'/images/bg/kapal-compressed/Kapal Longliner 1.jpeg'} alt="Kapal Long Liner" fill sizes="160px" style={{objectFit:'cover'}} />
+                <Image src={'/images/longliner/galangan-kapal-longliner-jawatengah.jpeg'} alt="Kapal Long Liner" fill sizes="160px" style={{objectFit:'cover'}} />
               </div>
               <div>
                 <strong>Kapal Long Liner</strong>
@@ -95,9 +95,9 @@ export default function Page() {
               </div>
             </Link>
 
-            <Link href="/produk-kapal#purse-seine" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
+            <Link href="/produk-kapal/purse-seine" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
               <div className="media-img" style={{position:'relative',width:160,height:120}}>
-                <Image src={'/images/bg/kapal-compressed/Kapal purse saine 1.jpeg'} alt="Kapal Purse Seine" fill sizes="160px" style={{objectFit:'cover'}} />
+                <Image src={'/images/purseseine/galangan-kapal-purse-seine-jawatengah.jpeg'} alt="Kapal Purse Seine" fill sizes="160px" style={{objectFit:'cover'}} />
               </div>
               <div>
                 <strong>Kapal Purse Seine</strong>
@@ -105,9 +105,9 @@ export default function Page() {
               </div>
             </Link>
 
-            <Link href="/produk-kapal#cakalang" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
+            <Link href="/produk-kapal/cakalang" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
               <div className="media-img" style={{position:'relative',width:160,height:120}}>
-                <Image src={'/images/bg/kapal-compressed/galangan kapal cakalang.png'} alt="Kapal Cakalang" fill sizes="160px" style={{objectFit:'cover'}} />
+                <Image src={'/images/cakalang/galangan-kapal-cakalang-jawatengah.jpeg'} alt="Kapal Cakalang" fill sizes="160px" style={{objectFit:'cover'}} />
               </div>
               <div>
                 <strong>Kapal Cakalang</strong>
@@ -123,9 +123,9 @@ export default function Page() {
             <span className="muted">Akses utama situs</span>
           </div>
           <div className="tiles" style={{marginTop:8}}>
-            <Link className="tile" href="/shipyard-indonesia">Shipyard Indonesia</Link>
-            <Link className="tile" href="/layanan">Layanan</Link>
-            <Link className="tile" href="/proses-pemesanan" style={{display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+            <Link className="tile gold" href="/shipyard-indonesia">Shipyard Indonesia</Link>
+            <Link className="tile gold" href="/layanan">Layanan</Link>
+            <Link className="tile gold" href="/proses-pemesanan" style={{display:'flex',alignItems:'center',justifyContent:'space-between'}}>
               Proses Pemesanan
               <span style={{width:24,height:24,overflow:'hidden',display:'inline-flex',position:'relative'}}>
                 <Image 
@@ -136,9 +136,9 @@ export default function Page() {
                 />
               </span>
             </Link>
-            <Link className="tile" href="/proyek">Proyek</Link>
-            <Link className="tile" href="/tentang-kami">Tentang Kami</Link>
-            <Link className="tile" href="/kontak">Kontak</Link>
+            <Link className="tile gold" href="/proyek">Proyek</Link>
+            <Link className="tile gold" href="/tentang-kami">Tentang Kami</Link>
+            <Link className="tile gold" href="/kontak">Kontak</Link>
           </div>
         </div>
 
@@ -151,7 +151,7 @@ export default function Page() {
             <Link className="card media" href="/layanan/produksi-kapal-kayu">
               <div className="media-img" style={{position:'relative',overflow:'hidden'}}>
                 <Image 
-                  src="/images/icon/icons8-ship-48 (1).png" 
+                  src="/images/produksi-kapal-galangan-batang-jateng.jpg" 
                   alt="Produksi Kapal Kayu" 
                   fill 
                   style={{objectFit:'cover'}}
@@ -168,7 +168,7 @@ export default function Page() {
             <Link className="card media" href="/layanan/dokumen-kapal">
               <div className="media-img" style={{position:'relative',overflow:'hidden'}}>
                 <Image 
-                  src="/images/icon/icons8-documents-50.png" 
+                  src="/images/jasa-pengurusan-dokumen-kapal.png" 
                   alt="Dokumen Kapal" 
                   fill 
                   style={{objectFit:'cover'}}
@@ -185,7 +185,7 @@ export default function Page() {
             <Link className="card media" href="/layanan/perawatan-kapal">
               <div className="media-img" style={{position:'relative',overflow:'hidden'}}>
                 <Image 
-                  src="/images/icon/icons8-maintenance-94.png" 
+                  src="/images/jasa-perawatan-perbaikan-kapal-kayu-batang.png" 
                   alt="Perawatan Kapal" 
                   fill 
                   style={{objectFit:'cover'}}
@@ -202,7 +202,7 @@ export default function Page() {
             <Link className="card media" href="/layanan/kapal-bekas">
               <div className="media-img" style={{position:'relative',overflow:'hidden'}}>
                 <Image 
-                  src="/images/icon/icons8-sell-48.png" 
+                  src="/images/jasa-jual-beli-kapal-second.png" 
                   alt="Jual-beli Kapal Second" 
                   fill 
                   style={{objectFit:'cover'}}
@@ -216,6 +216,53 @@ export default function Page() {
                 <p style={{marginTop:6}}>Mempertemukan penjual-pembeli, negosiasi, dan penyusunan sale form.</p>
               </div>
             </Link>
+          </div>
+        </div>
+
+        <div className="card" style={{marginTop:16,borderColor:'rgba(0,0,0,.08)'}}>
+          <div className="section-head">
+            <h2 className="section-title">Tenaga Ahli & Sertifikasi</h2>
+            <span className="muted">Kompetensi dan kepercayaan</span>
+          </div>
+
+          <div className="service-list" style={{marginTop:8}}>
+            {/* Tenaga Ahli */}
+            <div className="card media">
+              <div className="media-img" style={{position:'relative',width:'100%'}}>
+                <Image 
+                  src="/images/tenaga-ahli-batang-shipyard-M-Hilmi-syahfata.jpeg" 
+                  alt="Tenaga ahli Batang Shipyard - M. Hilmy Syahfata S.Tr.T." 
+                  fill 
+                  sizes="(max-width: 820px) 100vw, 540px" 
+                  style={{objectFit:'cover',objectPosition:'center 20%'}}
+                />
+              </div>
+              <div>
+                <h3 style={{margin:'0 0 6px'}}>M. Hilmy Syahfata S.Tr.T.</h3>
+                <p style={{margin:0}}>Tenaga ahli perkapalan dengan pengalaman pada desain konstruksi kayu, permesinan, dan supervisi produksi.</p>
+              </div>
+            </div>
+
+            {/* Sertifikasi */}
+            <div className="card media">
+              <div className="media-img" style={{position:'relative',width:'100%'}}>
+                <Image 
+                  src="/images/Hempel Paint School.jpg" 
+                  alt="Sertifikasi Hempel Paint School" 
+                  fill 
+                  sizes="(max-width: 820px) 100vw, 540px" 
+                  style={{objectFit:'cover'}}
+                />
+              </div>
+              <div>
+                <h3 style={{margin:'0 0 6px'}}>Sertifikasi Pelapisan & Coating</h3>
+                <p style={{margin:'0 0 10px'}}>Pembekalan teknik coating kapal dan perlindungan korosi dari Hempel dan Jotun.</p>
+                <div style={{display:'flex',gap:8,flexWrap:'wrap'}}>
+                  <a className="btn outline" href="/images/Hempel Paint School.pdf" target="_blank" rel="noopener">Hempel (PDF)</a>
+                  <a className="btn outline" href="/images/Sertifikat Jotun Paint School.pdf" target="_blank" rel="noopener">Jotun (PDF)</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

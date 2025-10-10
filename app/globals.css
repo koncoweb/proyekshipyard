@@ -193,19 +193,30 @@ strong { color: var(--color-text); font-weight: 600; }
   position: relative;
   background:
     linear-gradient(90deg,
-      rgba(225,26,30,.92) 0%,
-      rgba(225,26,30,.72) 36%,
-      rgba(225,26,30,.50) 60%,
-      rgba(225,26,30,.28) 82%,
-      rgba(225,26,30,.16) 100%
-    ),
-    url('/images/bg/BatangShipyard-galangan-kapal-kayu-kapal-ikan-indonesia-16-9.png') 78% 20% / cover no-repeat;
+      rgba(255,255,255,1) 0%,
+      rgba(255,255,255,.85) 36%,
+      rgba(255,255,255,.65) 60%,
+      rgba(255,255,255,.45) 82%,
+      rgba(255,255,255,.30) 100%
+    );
   border-bottom: 1px solid rgba(20,16,44,.08); 
   overflow: hidden;
 }
-/* White text on darkened hero */
-.hero.light-text .hero-title { color: #ffffff; }
-.hero.light-text .hero-sub { color: rgba(255,255,255,.88); }
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/images/bg/batangshipyard-com-galangan-kapal-batang-jateng.png') 78% 20% / cover no-repeat;
+  transform: scaleX(-1);
+  z-index: -1;
+}
+/* Dark text on light hero - ensure readability */
+.hero.light-text .hero-title { color: var(--black-900); }
+.hero.light-text .hero-sub { color: var(--color-text-light); }
 .shipyard-hero { 
   background: linear-gradient(0deg, rgba(255,255,255,.92) 0%, rgba(255,255,255,.72) 100%), url('/images/bg/bgshipyardindonesia.webp') center / cover no-repeat; 
 }
@@ -223,16 +234,8 @@ strong { color: var(--color-text); font-weight: 600; }
 
 /* Mobile adjustments to keep person visible */
 @media (max-width: 640px) {
-  .hero {
-    background:
-      linear-gradient(90deg,
-        rgba(225,26,30,.92) 0%,
-        rgba(225,26,30,.72) 36%,
-        rgba(225,26,30,.50) 60%,
-        rgba(225,26,30,.28) 82%,
-        rgba(225,26,30,.16) 100%
-      ),
-      url('/images/bg/BatangShipyard-galangan-kapal-kayu-kapal-ikan-indonesia-16-9.png') 96% 16% / cover no-repeat;
+  .hero::before {
+    background: url('/images/bg/batangshipyard-com-galangan-kapal-batang-jateng.png') 96% 16% / cover no-repeat;
     /* Nudge image further to the right so the person is fully visible */
     background-position: left top, right -48px top 16%;
   }
@@ -298,9 +301,9 @@ strong { color: var(--color-text); font-weight: 600; }
 .muted { color: var(--color-text-light); }
 
 /* CTA band */
-.cta-band { margin-top: 24px; background: linear-gradient(90deg, var(--red-700), var(--red-500)); color: #fff; border-radius: 18px; padding: 24px; display: grid; gap: 12px; align-items: center; box-shadow: 0 16px 40px rgba(208,27,33,.25); }
+.cta-band { margin-top: 24px; background: linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,.30)); color: var(--color-text); border-radius: 18px; padding: 24px; display: grid; gap: 12px; align-items: center; box-shadow: 0 16px 40px rgba(12,12,14,.15); border: 1px solid rgba(12,12,14,.10); }
 @media (min-width: 800px) { .cta-band { grid-template-columns: 1fr auto; padding: 28px 32px; } }
-.cta-band h3 { color: #fff; margin: 0; font-size: 18px; }
+.cta-band h3 { color: var(--color-text); margin: 0; font-size: 18px; }
 .cta-actions { display: flex; gap: 10px; }
 
 /* Services list adjustments */

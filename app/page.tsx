@@ -65,53 +65,53 @@ export default function Page() {
             <span className="muted">Jenis kapal unggulan</span>
           </div>
           <div className="service-list two-col" style={{marginTop:8}}>
-            <Link href="/produk-kapal/collecting" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
-              <div className="media-img" style={{position:'relative',width:160,height:120}}>
+            <Link href="/produk-kapal/collecting" className="card media horizontal">
+              <div className="media-img">
                 <Image src={'/images/collecting/galangan-kapal-collecting-jawatengah.jpeg'} alt="Kapal Collecting" fill sizes="160px" style={{objectFit:'cover'}} />
               </div>
               <div>
                 <strong>Kapal Collecting</strong>
-                <p style={{marginTop:6}}>Kapal pengumpul hasil tangkap dari unit penangkap di laut.</p>
+                <p>Kapal pengumpul hasil tangkap dari unit penangkap di laut.</p>
               </div>
             </Link>
 
-            <Link href="/produk-kapal/cumi" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
-              <div className="media-img" style={{position:'relative',width:160,height:120}}>
+            <Link href="/produk-kapal/cumi" className="card media horizontal">
+              <div className="media-img">
                 <Image src={'/images/cumi/galangan-kapal-cumi-jawatengah.jpeg'} alt="Kapal Cumi" fill sizes="160px" style={{objectFit:'cover'}} />
               </div>
               <div>
                 <strong>Kapal Cumi</strong>
-                <p style={{marginTop:6}}>Optimal untuk operasi dengan lampu atraktor dan handling cepat.</p>
+                <p>Optimal untuk operasi dengan lampu atraktor dan handling cepat.</p>
               </div>
             </Link>
 
-            <Link href="/produk-kapal/longliner" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
-              <div className="media-img" style={{position:'relative',width:160,height:120}}>
+            <Link href="/produk-kapal/longliner" className="card media horizontal">
+              <div className="media-img">
                 <Image src={'/images/longliner/galangan-kapal-longliner-jawatengah.jpeg'} alt="Kapal Long Liner" fill sizes="160px" style={{objectFit:'cover'}} />
               </div>
               <div>
                 <strong>Kapal Long Liner</strong>
-                <p style={{marginTop:6}}>Sistem rawai (long line) dengan stabilitas dan ergonomi kerja.</p>
+                <p>Sistem rawai (long line) dengan stabilitas dan ergonomi kerja.</p>
               </div>
             </Link>
 
-            <Link href="/produk-kapal/purse-seine" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
-              <div className="media-img" style={{position:'relative',width:160,height:120}}>
+            <Link href="/produk-kapal/purse-seine" className="card media horizontal">
+              <div className="media-img">
                 <Image src={'/images/purseseine/galangan-kapal-purse-seine-jawatengah.jpeg'} alt="Kapal Purse Seine" fill sizes="160px" style={{objectFit:'cover'}} />
               </div>
               <div>
                 <strong>Kapal Purse Seine</strong>
-                <p style={{marginTop:6}}>Pengoperasian jaring lingkar dengan ruang palka besar.</p>
+                <p>Pengoperasian jaring lingkar dengan ruang palka besar.</p>
               </div>
             </Link>
 
-            <Link href="/produk-kapal/cakalang" className="card media" style={{gridTemplateColumns:'160px 1fr'}}>
-              <div className="media-img" style={{position:'relative',width:160,height:120}}>
+            <Link href="/produk-kapal/cakalang" className="card media horizontal">
+              <div className="media-img">
                 <Image src={'/images/cakalang/galangan-kapal-cakalang-jawatengah.jpeg'} alt="Kapal Cakalang" fill sizes="160px" style={{objectFit:'cover'}} />
               </div>
               <div>
                 <strong>Kapal Cakalang</strong>
-                <p style={{marginTop:6}}>Cepat dan efisien untuk target tongkol/cakalang.</p>
+                <p>Cepat dan efisien untuk target tongkol/cakalang.</p>
               </div>
             </Link>
           </div>
@@ -151,7 +151,7 @@ export default function Page() {
             <Link className="card media" href="/layanan/produksi-kapal-kayu">
               <div className="media-img" style={{position:'relative',overflow:'hidden'}}>
                 <Image 
-                  src="/images/produksi-kapal-galangan-batang-jateng.jpg" 
+                  src="/images/bg/batangshipyard-com-galangan-pembuatan-kapal-batang-jateng-sml-crp.png" 
                   alt="Produksi Kapal Kayu" 
                   fill 
                   style={{objectFit:'cover'}}
@@ -168,7 +168,7 @@ export default function Page() {
             <Link className="card media" href="/layanan/dokumen-kapal">
               <div className="media-img" style={{position:'relative',overflow:'hidden'}}>
                 <Image 
-                  src="/images/jasa-pengurusan-dokumen-kapal.png" 
+                  src="/images/bg/batangshipyard-com-galangan-kapal-batang-jateng2-sml.png" 
                   alt="Dokumen Kapal" 
                   fill 
                   style={{objectFit:'cover'}}
@@ -185,7 +185,7 @@ export default function Page() {
             <Link className="card media" href="/layanan/perawatan-kapal">
               <div className="media-img" style={{position:'relative',overflow:'hidden'}}>
                 <Image 
-                  src="/images/jasa-perawatan-perbaikan-kapal-kayu-batang.png" 
+                  src="/images/bg/batangshipyard-com-galangan-perawatan-kapal-batang-jateng-crp-sml.png" 
                   alt="Perawatan Kapal" 
                   fill 
                   style={{objectFit:'cover'}}
@@ -202,7 +202,7 @@ export default function Page() {
             <Link className="card media" href="/layanan/kapal-bekas">
               <div className="media-img" style={{position:'relative',overflow:'hidden'}}>
                 <Image 
-                  src="/images/jasa-jual-beli-kapal-second.png" 
+                  src="/images/bg/batangshipyard-com-galangan-jual-beli-kapal-second-kapal-batang-jateng-sml-crp.png" 
                   alt="Jual-beli Kapal Second" 
                   fill 
                   style={{objectFit:'cover'}}

@@ -18,7 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Page() {
   return (
     <>
-    <section className="hero services-hero">
+    <section className="hero produksi-hero">
       <div className="container hero-inner">
         <div className="hero-copy">
           <p style={{color:'#0b2a6f',fontWeight:700,margin:'0 0 8px'}}>Layanan</p>

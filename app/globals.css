@@ -246,7 +246,7 @@ strong { color: var(--color-text); font-weight: 600; }
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('/images/bg/batangshipyard-com-galangan-kapal-batang-jateng.png') 78% 20% / cover no-repeat;
+  background: url('/images/bg/batangshipyard-com-galangan-kapal-batang-jateng-crp-SML.png') 78% 20% / cover no-repeat;
   transform: scaleX(-1);
   z-index: -1;
 }
@@ -274,7 +274,7 @@ strong { color: var(--color-text); font-weight: 600; }
 /* Mobile adjustments to keep person visible */
 @media (max-width: 640px) {
   .hero::before {
-    background: url('/images/bg/batangshipyard-com-galangan-kapal-batang-jateng.png') 96% 16% / cover no-repeat;
+    background: url('/images/bg/batangshipyard-com-galangan-kapal-batang-jateng-crp-SML.png') 96% 16% / cover no-repeat;
     /* Nudge image further to the right so the person is fully visible */
     background-position: left top, right -48px top 16%;
   }

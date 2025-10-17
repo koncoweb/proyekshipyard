@@ -36,18 +36,6 @@ export function Header() {
   return (
     <header className="pp-header" style={{position:'sticky',top:0,zIndex:10}}>
       <div className="container pp-header-inner">
-        <Link href={homeHref as any} aria-label={isEnglish ? 'Home' : 'Beranda'} className="pp-brand">
-          <Image 
-            src="/images/logo/logo-batangshipyard-transparent.png" 
-            alt="Batang Shipyard Logo" 
-            width={32} 
-            height={32} 
-            style={{ objectFit: 'contain' }}
-            priority
-          />
-          Batang Shipyard
-        </Link>
-
         <nav aria-label="Primary" className="pp-nav">
           {navItems.map(item => (
             (item as any).children ? (
@@ -64,6 +52,18 @@ export function Header() {
             )
           ))}
         </nav>
+
+        <Link href={homeHref as any} aria-label={isEnglish ? 'Home' : 'Beranda'} className="pp-brand brand-box">
+          <Image 
+            src="/images/logo/logo-batangshipyard-transparent.png" 
+            alt="Batang Shipyard Logo" 
+            width={40} 
+            height={40} 
+            style={{ objectFit: 'contain' }}
+            priority
+          />
+          Batang Shipyard
+        </Link>
 
         <div className="pp-actions">
           {/* Language toggle */}

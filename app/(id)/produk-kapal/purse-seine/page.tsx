@@ -14,13 +14,13 @@ export default function Page() {
     <>
       <section className="hero light-text" style={{
         background:
-          "linear-gradient(90deg, rgba(11,92,215,.80) 0%, rgba(11,92,215,.60) 36%, rgba(11,92,215,.40) 60%, rgba(11,92,215,.20) 82%, rgba(11,92,215,.10) 100%), url('/images/purseseine/galangan-kapal-purse-seine-jawatengah.jpeg') center / cover no-repeat"
+          "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,.85) 36%, rgba(255,255,255,.65) 60%, rgba(255,255,255,.45) 82%, rgba(255,255,255,.30) 100%), url('/images/purseseine/galangan-kapal-purse-seine-jawatengah.jpeg') center / cover no-repeat"
       }}>
         <div className="container hero-inner" style={{padding:'98px 0 77px'}}>
           <div className="hero-copy">
-            <p style={{color:'#ffffff',fontWeight:800,margin:'0 0 8px'}}>Produk Kapal</p>
-            <h1 className="hero-title" style={{color:'#fff'}}>Kapal Purse Seine</h1>
-            <p className="hero-sub" style={{color:'rgba(255,255,255,.9)'}}>Optimal untuk operasi jaring lingkar dengan winch dan roller ditempatkan strategis.</p>
+            <p style={{fontWeight:800,margin:'0 0 8px'}}>Produk Kapal</p>
+            <h1 className="hero-title">Kapal Purse Seine</h1>
+            <p className="hero-sub">Optimal untuk operasi jaring lingkar dengan winch dan roller ditempatkan strategis.</p>
             <div className="hero-cta">
               <Link href="/kontak" className="btn">Konsultasi Desain</Link>
               <Link href="/proyek" className="btn outline">Lihat Proyek</Link>

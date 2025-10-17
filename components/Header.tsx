@@ -10,8 +10,20 @@ export function Header() {
 
   const navItems = isEnglish
     ? [
-        { href: '/en/shipyard-indonesia', label: 'Shipyard Indonesia' },
+        {
+          href: '/en/vessels',
+          label: 'Vessels',
+          children: [
+            { href: '/en/vessels/collecting', label: 'Collecting Vessel' },
+            { href: '/en/vessels/squid', label: 'Squid Fishing Vessel' },
+            { href: '/en/vessels/longliner', label: 'Long Liner Vessel' },
+            { href: '/en/vessels/purse-seine', label: 'Purse Seine Vessel' },
+            { href: '/en/vessels/skipjack', label: 'Skipjack Vessel' },
+          ],
+        },
         { href: '/en/services', label: 'Services' },
+        { href: '/en/projects', label: 'Projects' },
+        { href: '/en/about', label: 'About' },
         { href: '/en/contact', label: 'Contact' },
       ]
     : [
@@ -74,6 +86,7 @@ export function Header() {
               // EN -> ID
               if (pathname === '/en' || pathname === '/en/') target = '/';
               else if (pathname?.startsWith('/en/services')) target = '/layanan';
+              else if (pathname?.startsWith('/en/vessels')) target = '/produk-kapal';
               else if (pathname?.startsWith('/en/shipyard-indonesia')) target = '/shipyard-indonesia';
               else if (pathname?.startsWith('/en/contact')) target = '/kontak';
               else if (pathname?.startsWith('/en/projects')) target = '/proyek';
@@ -84,6 +97,7 @@ export function Header() {
               // ID -> EN
               if (pathname === '/' || pathname === '') target = '/en';
               else if (pathname?.startsWith('/layanan')) target = '/en/services';
+              else if (pathname?.startsWith('/produk-kapal')) target = '/en/vessels';
               else if (pathname?.startsWith('/shipyard-indonesia')) target = '/en/shipyard-indonesia';
               else if (pathname?.startsWith('/kontak')) target = '/en/contact';
               else if (pathname?.startsWith('/proyek')) target = '/en/projects';

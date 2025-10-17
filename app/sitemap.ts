@@ -10,7 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const en = [
     '/en','/en/shipyard-indonesia','/en/services','/en/projects','/en/facilities','/en/about',
     '/en/services/wooden-vessel','/en/services/ship-documents','/en/services/vessel-maintenance','/en/services/second-hand-vessel',
-    '/en/contact'
+    '/en/vessels','/en/vessels/collecting','/en/vessels/squid','/en/vessels/longliner','/en/vessels/purse-seine','/en/vessels/skipjack',
+    '/en/contact','/en/blog'
   ];
   return [...id, ...en].map((p) => ({
     url: `${base}${p === '/' ? '' : p}`,
